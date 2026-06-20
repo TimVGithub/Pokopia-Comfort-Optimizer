@@ -1,0 +1,3742 @@
+[
+  {
+    "id": "bulbasaur",
+    "name": "Bulbasaur",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/001.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Soft stuff",
+      "Cute stuff",
+      "Lots of water",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "ivysaur",
+    "name": "Ivysaur",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/002.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Soft stuff",
+      "Cute stuff",
+      "Pretty flowers",
+      "Colorful stuff"
+    ]
+  },
+  {
+    "id": "venusaur",
+    "name": "Venusaur",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/003.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Soft stuff",
+      "Cute stuff",
+      "Pretty flowers",
+      "Luxury"
+    ]
+  },
+  {
+    "id": "charmander",
+    "name": "Charmander",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/004.png",
+    "favoriteCategories": [
+      "Lots of fire",
+      "Wooden stuff",
+      "Hard stuff",
+      "Exercise",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "charmeleon",
+    "name": "Charmeleon",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/005.png",
+    "favoriteCategories": [
+      "Lots of fire",
+      "Wooden stuff",
+      "Hard stuff",
+      "Exercise",
+      "Rides"
+    ]
+  },
+  {
+    "id": "charizard",
+    "name": "Charizard",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/006.png",
+    "favoriteCategories": [
+      "Lots of fire",
+      "Nice breezes",
+      "Wooden stuff",
+      "Exercise",
+      "Luxury"
+    ]
+  },
+  {
+    "id": "squirtle",
+    "name": "Squirtle",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/007.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Cleanliness",
+      "Healing",
+      "Cute stuff",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "wartortle",
+    "name": "Wartortle",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/008.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Cleanliness",
+      "Healing",
+      "Exercise",
+      "Hard stuff"
+    ]
+  },
+  {
+    "id": "blastoise",
+    "name": "Blastoise",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/009.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Cleanliness",
+      "Healing",
+      "Exercise",
+      "Luxury"
+    ]
+  },
+  {
+    "id": "pidgey",
+    "name": "Pidgey",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/016.png",
+    "favoriteCategories": [
+      "Soft stuff",
+      "Nice breezes",
+      "Watching stuff",
+      "Lots of nature",
+      "Play spaces"
+    ]
+  },
+  {
+    "id": "pidgeotto",
+    "name": "Pidgeotto",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/017.png",
+    "favoriteCategories": [
+      "Soft stuff",
+      "Nice breezes",
+      "Watching stuff",
+      "Lots of nature",
+      "Looks like food"
+    ]
+  },
+  {
+    "id": "pidgeot",
+    "name": "Pidgeot",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/018.png",
+    "favoriteCategories": [
+      "Soft stuff",
+      "Nice breezes",
+      "Wooden stuff",
+      "Lots of nature",
+      "Luxury"
+    ]
+  },
+  {
+    "id": "oddish",
+    "name": "Oddish",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/043.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Lots of dirt",
+      "Soft stuff",
+      "Pretty flowers",
+      "Lots of water"
+    ]
+  },
+  {
+    "id": "gloom",
+    "name": "Gloom",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/044.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Lots of dirt",
+      "Soft stuff",
+      "Pretty flowers",
+      "Garbage"
+    ]
+  },
+  {
+    "id": "vileplume",
+    "name": "Vileplume",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/045.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Lots of dirt",
+      "Soft stuff",
+      "Pretty flowers",
+      "Colorful stuff"
+    ]
+  },
+  {
+    "id": "bellossom",
+    "name": "Bellossom",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/182.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Pretty flowers",
+      "Play spaces",
+      "Cute stuff",
+      "Noisy stuff"
+    ]
+  },
+  {
+    "id": "paras",
+    "name": "Paras",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/046.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Wooden stuff",
+      "Watching stuff",
+      "Lots of dirt",
+      "Looks like food"
+    ]
+  },
+  {
+    "id": "parasect",
+    "name": "Parasect",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/047.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Wooden stuff",
+      "Watching stuff",
+      "Lots of dirt",
+      "Strange stuff"
+    ]
+  },
+  {
+    "id": "venonat",
+    "name": "Venonat",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/048.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Wooden stuff",
+      "Watching stuff",
+      "Complicated stuff",
+      "Letters and words"
+    ]
+  },
+  {
+    "id": "venomoth",
+    "name": "Venomoth",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/049.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Wooden stuff",
+      "Watching stuff",
+      "Nice breezes",
+      "Pretty flowers"
+    ]
+  },
+  {
+    "id": "bellsprout",
+    "name": "Bellsprout",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/069.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Wooden stuff",
+      "Lots of dirt",
+      "Lots of water",
+      "Pretty flowers"
+    ]
+  },
+  {
+    "id": "weepinbell",
+    "name": "Weepinbell",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/070.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Wooden stuff",
+      "Lots of dirt",
+      "Colorful stuff",
+      "Pretty flowers"
+    ]
+  },
+  {
+    "id": "victreebel",
+    "name": "Victreebel",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/071.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Wooden stuff",
+      "Lots of dirt",
+      "Colorful stuff",
+      "Pretty flowers"
+    ]
+  },
+  {
+    "id": "slowpoke",
+    "name": "Slowpoke",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/079.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Cleanliness",
+      "Strange stuff",
+      "Soft stuff",
+      "Healing"
+    ]
+  },
+  {
+    "id": "slowbro",
+    "name": "Slowbro",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/080.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Cleanliness",
+      "Strange stuff",
+      "Group Activities",
+      "Healing"
+    ]
+  },
+  {
+    "id": "slowking",
+    "name": "Slowking",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/199.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Cleanliness",
+      "Strange stuff",
+      "Group Activities",
+      "Healing"
+    ]
+  },
+  {
+    "id": "magnemite",
+    "name": "Magnemite",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/081.png",
+    "favoriteCategories": [
+      "Electronics",
+      "Metal stuff",
+      "Shiny stuff",
+      "Hard stuff",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "magneton",
+    "name": "Magneton",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/082.png",
+    "favoriteCategories": [
+      "Electronics",
+      "Metal stuff",
+      "Shiny stuff",
+      "Gatherings",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "magnezone",
+    "name": "Magnezone",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/462.png",
+    "favoriteCategories": [
+      "Electronics",
+      "Metal stuff",
+      "Luxury",
+      "Gatherings",
+      "Hard stuff"
+    ]
+  },
+  {
+    "id": "onix",
+    "name": "Onix",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/095.png",
+    "favoriteCategories": [
+      "Stone stuff",
+      "Lots of dirt",
+      "Blocky stuff",
+      "Slender objects",
+      "Exercise"
+    ]
+  },
+  {
+    "id": "steelix",
+    "name": "Steelix",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/208.png",
+    "favoriteCategories": [
+      "Metal stuff",
+      "Lots of dirt",
+      "Stone stuff",
+      "Slender objects",
+      "Hard stuff"
+    ]
+  },
+  {
+    "id": "cubone",
+    "name": "Cubone",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/104.png",
+    "favoriteCategories": [
+      "Lots of dirt",
+      "Construction",
+      "Exercise",
+      "Slender objects",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "marowak",
+    "name": "Marowak",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/105.png",
+    "favoriteCategories": [
+      "Lots of dirt",
+      "Construction",
+      "Exercise",
+      "Slender objects",
+      "Luxury"
+    ]
+  },
+  {
+    "id": "tyrogue",
+    "name": "Tyrogue",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/236.png",
+    "favoriteCategories": [
+      "Exercise",
+      "Group Activities",
+      "Fabric",
+      "Stone stuff",
+      "Round stuff"
+    ]
+  },
+  {
+    "id": "hitmonlee",
+    "name": "Hitmonlee",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/106.png",
+    "favoriteCategories": [
+      "Exercise",
+      "Group Activities",
+      "Fabric",
+      "Stone stuff",
+      "Round stuff"
+    ]
+  },
+  {
+    "id": "hitmonchan",
+    "name": "Hitmonchan",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/107.png",
+    "favoriteCategories": [
+      "Exercise",
+      "Group Activities",
+      "Fabric",
+      "Stone stuff",
+      "Round stuff"
+    ]
+  },
+  {
+    "id": "hitmontop",
+    "name": "Hitmontop",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/237.png",
+    "favoriteCategories": [
+      "Exercise",
+      "Group Activities",
+      "Fabric",
+      "Stone stuff",
+      "Round stuff"
+    ]
+  },
+  {
+    "id": "koffing",
+    "name": "Koffing",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/109.png",
+    "favoriteCategories": [
+      "Garbage",
+      "Gatherings",
+      "Complicated stuff",
+      "Soft stuff",
+      "Wobbly stuff"
+    ]
+  },
+  {
+    "id": "weezing",
+    "name": "Weezing",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/110.png",
+    "favoriteCategories": [
+      "Garbage",
+      "Gatherings",
+      "Complicated stuff",
+      "Soft stuff",
+      "Wobbly stuff"
+    ]
+  },
+  {
+    "id": "tangela",
+    "name": "Tangela",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/114.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Lots of water",
+      "Gatherings",
+      "Pretty flowers",
+      "Slender objects"
+    ]
+  },
+  {
+    "id": "professor_tangrowth",
+    "name": "Professor Tangrowth",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/465-professortangrowth.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Complicated stuff",
+      "Letters and words",
+      "Strange stuff",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "tangrowth",
+    "name": "Tangrowth",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/465.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Lots of water",
+      "Gatherings",
+      "Pretty flowers",
+      "Watching stuff"
+    ]
+  },
+  {
+    "id": "scyther",
+    "name": "Scyther",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/123.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Nice breezes",
+      "Wooden stuff",
+      "Sharp stuff",
+      "Exercise"
+    ]
+  },
+  {
+    "id": "scizor",
+    "name": "Scizor",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/212.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Metal stuff",
+      "Wooden stuff",
+      "Hard stuff",
+      "Exercise"
+    ]
+  },
+  {
+    "id": "pinsir",
+    "name": "Pinsir",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/127.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Wooden stuff",
+      "Pretty flowers",
+      "Sharp stuff",
+      "Exercise"
+    ]
+  },
+  {
+    "id": "magikarp",
+    "name": "Magikarp",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/129.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Ocean vibes",
+      "Group Activities",
+      "Rides",
+      "Wobbly stuff"
+    ]
+  },
+  {
+    "id": "gyarados",
+    "name": "Gyarados",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/130.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Ocean vibes",
+      "Nice breezes",
+      "Cleanliness",
+      "Slender objects"
+    ]
+  },
+  {
+    "id": "ditto",
+    "name": "Ditto",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/132.png",
+    "favoriteCategories": [
+      "None"
+    ]
+  },
+  {
+    "id": "hoothoot",
+    "name": "Hoothoot",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/163.png",
+    "favoriteCategories": [
+      "Soft stuff",
+      "Nice breezes",
+      "Fabric",
+      "Wobbly stuff",
+      "Watching stuff"
+    ]
+  },
+  {
+    "id": "noctowl",
+    "name": "Noctowl",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/164.png",
+    "favoriteCategories": [
+      "Soft stuff",
+      "Nice breezes",
+      "Letters and words",
+      "Containers",
+      "Watching stuff"
+    ]
+  },
+  {
+    "id": "heracross",
+    "name": "Heracross",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/214.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Wooden stuff",
+      "Pretty flowers",
+      "Looks like food",
+      "Exercise"
+    ]
+  },
+  {
+    "id": "volbeat",
+    "name": "Volbeat",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/313.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Wooden stuff",
+      "Shiny stuff",
+      "Cute stuff",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "illumise",
+    "name": "Illumise",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/314.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Wooden stuff",
+      "Shiny stuff",
+      "Cute stuff",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "gulpin",
+    "name": "Gulpin",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/316.png",
+    "favoriteCategories": [
+      "Cute stuff",
+      "Looks like food",
+      "Round stuff",
+      "Containers",
+      "Colorful stuff"
+    ]
+  },
+  {
+    "id": "swalot",
+    "name": "Swalot",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/317.png",
+    "favoriteCategories": [
+      "Garbage",
+      "Looks like food",
+      "Round stuff",
+      "Containers",
+      "Colorful stuff"
+    ]
+  },
+  {
+    "id": "cacnea",
+    "name": "Cacnea",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/331.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Pretty flowers",
+      "Cute stuff",
+      "Round stuff",
+      "Sharp stuff"
+    ]
+  },
+  {
+    "id": "cacturne",
+    "name": "Cacturne",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/332.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Nice breezes",
+      "Luxury",
+      "Shiny stuff",
+      "Sharp stuff"
+    ]
+  },
+  {
+    "id": "combee",
+    "name": "Combee",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/415.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Nice breezes",
+      "Wooden stuff",
+      "Gatherings",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "vespiquen",
+    "name": "Vespiquen",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/416.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Nice breezes",
+      "Wooden stuff",
+      "Gatherings",
+      "Complicated stuff"
+    ]
+  },
+  {
+    "id": "shellos",
+    "name": "Shellos",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/422.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Ocean vibes",
+      "Cleanliness",
+      "Colorful stuff",
+      "Containers"
+    ]
+  },
+  {
+    "id": "shellos_east_sea",
+    "name": "Shellos East Sea",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/422-shelloseastsea.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Ocean vibes",
+      "Cleanliness",
+      "Colorful stuff",
+      "Containers"
+    ]
+  },
+  {
+    "id": "gastrodon",
+    "name": "Gastrodon",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/423.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Lots of dirt",
+      "Ocean vibes",
+      "Cleanliness",
+      "Containers"
+    ]
+  },
+  {
+    "id": "gastrodon_east_sea",
+    "name": "Gastrodon East Sea",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/423-gastrodoneastsea.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Lots of dirt",
+      "Ocean vibes",
+      "Cleanliness",
+      "Containers"
+    ]
+  },
+  {
+    "id": "drifloon",
+    "name": "Drifloon",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/425.png",
+    "favoriteCategories": [
+      "Spooky stuff",
+      "Strange stuff",
+      "Nice breezes",
+      "Cute stuff",
+      "Round stuff"
+    ]
+  },
+  {
+    "id": "drifblim",
+    "name": "Drifblim",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/426.png",
+    "favoriteCategories": [
+      "Spooky stuff",
+      "Strange stuff",
+      "Nice breezes",
+      "Wobbly stuff",
+      "Spinning stuff"
+    ]
+  },
+  {
+    "id": "drilbur",
+    "name": "Drilbur",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/529.png",
+    "favoriteCategories": [
+      "Lots of dirt",
+      "Stone stuff",
+      "Lots of nature",
+      "Watching stuff",
+      "Sharp stuff"
+    ]
+  },
+  {
+    "id": "excadrill",
+    "name": "Excadrill",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/530.png",
+    "favoriteCategories": [
+      "Lots of dirt",
+      "Metal stuff",
+      "Exercise",
+      "Watching stuff",
+      "Sharp stuff"
+    ]
+  },
+  {
+    "id": "timburr",
+    "name": "Timburr",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/532.png",
+    "favoriteCategories": [
+      "Exercise",
+      "Construction",
+      "Wooden stuff",
+      "Slender objects",
+      "Blocky stuff"
+    ]
+  },
+  {
+    "id": "gurdurr",
+    "name": "Gurdurr",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/533.png",
+    "favoriteCategories": [
+      "Exercise",
+      "Construction",
+      "Metal stuff",
+      "Slender objects",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "conkeldurr",
+    "name": "Conkeldurr",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/534.png",
+    "favoriteCategories": [
+      "Exercise",
+      "Construction",
+      "Stone stuff",
+      "Slender objects",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "litwick",
+    "name": "Litwick",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/607.png",
+    "favoriteCategories": [
+      "Spooky stuff",
+      "Strange stuff",
+      "Lots of fire",
+      "Wobbly stuff",
+      "Blocky stuff"
+    ]
+  },
+  {
+    "id": "lampent",
+    "name": "Lampent",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/608.png",
+    "favoriteCategories": [
+      "Spooky stuff",
+      "Strange stuff",
+      "Lots of fire",
+      "Wobbly stuff",
+      "Containers"
+    ]
+  },
+  {
+    "id": "chandelure",
+    "name": "Chandelure",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/609.png",
+    "favoriteCategories": [
+      "Spooky stuff",
+      "Strange stuff",
+      "Lots of fire",
+      "Wobbly stuff",
+      "Watching stuff"
+    ]
+  },
+  {
+    "id": "axew",
+    "name": "Axew",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/610.png",
+    "favoriteCategories": [
+      "Lots of fire",
+      "Luxury",
+      "Lots of dirt",
+      "Hard stuff",
+      "Sharp stuff"
+    ]
+  },
+  {
+    "id": "fraxure",
+    "name": "Fraxure",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/611.png",
+    "favoriteCategories": [
+      "Lots of fire",
+      "Luxury",
+      "Lots of dirt",
+      "Exercise",
+      "Sharp stuff"
+    ]
+  },
+  {
+    "id": "haxorus",
+    "name": "Haxorus",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/612.png",
+    "favoriteCategories": [
+      "Lots of fire",
+      "Luxury",
+      "Lots of dirt",
+      "Exercise",
+      "Sharp stuff"
+    ]
+  },
+  {
+    "id": "goomy",
+    "name": "Goomy",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/704.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Luxury",
+      "Lots of nature",
+      "Cleanliness",
+      "Healing"
+    ]
+  },
+  {
+    "id": "sliggoo",
+    "name": "Sliggoo",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/705.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Luxury",
+      "Soft stuff",
+      "Cleanliness",
+      "Healing"
+    ]
+  },
+  {
+    "id": "goodra",
+    "name": "Goodra",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/706.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Luxury",
+      "Exercise",
+      "Cleanliness",
+      "Healing"
+    ]
+  },
+  {
+    "id": "cramorant",
+    "name": "Cramorant",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/845.png",
+    "favoriteCategories": [
+      "Nice breezes",
+      "Lots of water",
+      "Ocean vibes",
+      "Slender objects",
+      "Looks like food"
+    ]
+  },
+  {
+    "id": "pichu",
+    "name": "Pichu",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/172.png",
+    "favoriteCategories": [
+      "Electronics",
+      "Glass stuff",
+      "Cute stuff",
+      "Pretty flowers",
+      "Fabric"
+    ]
+  },
+  {
+    "id": "peakychu",
+    "name": "Peakychu",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/025-peakychu.png",
+    "favoriteCategories": [
+      "Electronics",
+      "Glass stuff",
+      "Cute stuff",
+      "Healing",
+      "Letters and words"
+    ]
+  },
+  {
+    "id": "pikachu",
+    "name": "Pikachu",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/025.png",
+    "favoriteCategories": [
+      "Electronics",
+      "Glass stuff",
+      "Group Activities",
+      "Round stuff",
+      "Rides"
+    ]
+  },
+  {
+    "id": "raichu",
+    "name": "Raichu",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/026.png",
+    "favoriteCategories": [
+      "Electronics",
+      "Glass stuff",
+      "Group Activities",
+      "Round stuff",
+      "Play spaces"
+    ]
+  },
+  {
+    "id": "zubat",
+    "name": "Zubat",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/041.png",
+    "favoriteCategories": [
+      "Spooky stuff",
+      "Nice breezes",
+      "Wooden stuff",
+      "Noise stuff",
+      "Complicated stuff"
+    ]
+  },
+  {
+    "id": "golbat",
+    "name": "Golbat",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/042.png",
+    "favoriteCategories": [
+      "Spooky stuff",
+      "Nice breezes",
+      "Wooden stuff",
+      "Noise stuff",
+      "Complicated stuff"
+    ]
+  },
+  {
+    "id": "crobat",
+    "name": "Crobat",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/169.png",
+    "favoriteCategories": [
+      "Spooky stuff",
+      "Nice breezes",
+      "Wooden stuff",
+      "Garbage",
+      "Watching stuff"
+    ]
+  },
+  {
+    "id": "meowth",
+    "name": "Meowth",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/052.png",
+    "favoriteCategories": [
+      "Containers",
+      "Group Activities",
+      "Shiny stuff",
+      "Glass stuff",
+      "Luxury"
+    ]
+  },
+  {
+    "id": "persian",
+    "name": "Persian",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/053.png",
+    "favoriteCategories": [
+      "Containers",
+      "Group Activities",
+      "Shiny stuff",
+      "Watching stuff",
+      "Luxury"
+    ]
+  },
+  {
+    "id": "psyduck",
+    "name": "Psyduck",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/054.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Ocean vibes",
+      "Strange stuff",
+      "Complicated stuff",
+      "Healing"
+    ]
+  },
+  {
+    "id": "golduck",
+    "name": "Golduck",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/055.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Ocean vibes",
+      "Strange stuff",
+      "Complicated stuff",
+      "Sharp stuff"
+    ]
+  },
+  {
+    "id": "growlithe",
+    "name": "Growlithe",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/058.png",
+    "favoriteCategories": [
+      "Lots of fire",
+      "Stone stuff",
+      "Nice breezes",
+      "Letters and words",
+      "Pretty flowers"
+    ]
+  },
+  {
+    "id": "arcanine",
+    "name": "Arcanine",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/059.png",
+    "favoriteCategories": [
+      "Lots of fire",
+      "Stone stuff",
+      "Nice breezes",
+      "Watching stuff",
+      "Symbols"
+    ]
+  },
+  {
+    "id": "farfetch_d",
+    "name": "Farfetch'd",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/083.png",
+    "favoriteCategories": [
+      "Soft stuff",
+      "Nice breezes",
+      "Wooden stuff",
+      "Slender objects",
+      "Exercise"
+    ]
+  },
+  {
+    "id": "grimer",
+    "name": "Grimer",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/088.png",
+    "favoriteCategories": [
+      "Garbage",
+      "Spooky stuff",
+      "Gatherings",
+      "Shiny stuff",
+      "Containers"
+    ]
+  },
+  {
+    "id": "muk",
+    "name": "Muk",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/089.png",
+    "favoriteCategories": [
+      "Garbage",
+      "Spooky stuff",
+      "Gatherings",
+      "Shiny stuff",
+      "Colorful stuff"
+    ]
+  },
+  {
+    "id": "gastly",
+    "name": "Gastly",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/092.png",
+    "favoriteCategories": [
+      "Spooky stuff",
+      "Strange stuff",
+      "Garbage",
+      "Containers",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "haunter",
+    "name": "Haunter",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/093.png",
+    "favoriteCategories": [
+      "Spooky stuff",
+      "Strange stuff",
+      "Garbage",
+      "Wobbly stuff",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "gengar",
+    "name": "Gengar",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/094.png",
+    "favoriteCategories": [
+      "Spooky stuff",
+      "Strange stuff",
+      "Garbage",
+      "Rides",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "voltorb",
+    "name": "Voltorb",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/100.png",
+    "favoriteCategories": [
+      "Electronics",
+      "Shiny stuff",
+      "Round stuff",
+      "Colorful stuff",
+      "Spinning stuff"
+    ]
+  },
+  {
+    "id": "electrode",
+    "name": "Electrode",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/101.png",
+    "favoriteCategories": [
+      "Electronics",
+      "Shiny stuff",
+      "Round stuff",
+      "Play spaces",
+      "Spinning stuff"
+    ]
+  },
+  {
+    "id": "exeggcute",
+    "name": "Exeggcute",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/102.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Strange stuff",
+      "Gatherings",
+      "Watching stuff",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "exeggutor",
+    "name": "Exeggutor",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/103.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Strange stuff",
+      "Gatherings",
+      "Watching stuff",
+      "Wooden stuff"
+    ]
+  },
+  {
+    "id": "happiny",
+    "name": "Happiny",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/440.png",
+    "favoriteCategories": [
+      "Soft stuff",
+      "Fabric",
+      "Healing",
+      "Round stuff",
+      "Containers"
+    ]
+  },
+  {
+    "id": "chansey",
+    "name": "Chansey",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/113.png",
+    "favoriteCategories": [
+      "Soft stuff",
+      "Fabric",
+      "Healing",
+      "Round stuff",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "blissey",
+    "name": "Blissey",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/242.png",
+    "favoriteCategories": [
+      "Soft stuff",
+      "Fabric",
+      "Healing",
+      "Round stuff",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "elekid",
+    "name": "Elekid",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/239.png",
+    "favoriteCategories": [
+      "Electronics",
+      "Glass stuff",
+      "Cute stuff",
+      "Round stuff",
+      "Spinning stuff"
+    ]
+  },
+  {
+    "id": "electabuzz",
+    "name": "Electabuzz",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/125.png",
+    "favoriteCategories": [
+      "Electronics",
+      "Glass stuff",
+      "Lots of fire",
+      "Sharp stuff",
+      "Exercise"
+    ]
+  },
+  {
+    "id": "electivire",
+    "name": "Electivire",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/466.png",
+    "favoriteCategories": [
+      "Electronics",
+      "Glass stuff",
+      "Lots of fire",
+      "Hard stuff",
+      "Exercise"
+    ]
+  },
+  {
+    "id": "lapras",
+    "name": "Lapras",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/131.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Ocean vibes",
+      "Cleanliness",
+      "Watching stuff",
+      "Healing"
+    ]
+  },
+  {
+    "id": "munchlax",
+    "name": "Munchlax",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/446.png",
+    "favoriteCategories": [
+      "Soft stuff",
+      "Lots of nature",
+      "Looks like food",
+      "Wobbly stuff",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "mosslax",
+    "name": "Mosslax",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/143-mosslax.png",
+    "favoriteCategories": [
+      "Soft stuff",
+      "Fabric",
+      "Looks like food",
+      "Watching stuff",
+      "Strange stuff"
+    ]
+  },
+  {
+    "id": "snorlax",
+    "name": "Snorlax",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/143.png",
+    "favoriteCategories": [
+      "Soft stuff",
+      "Fabric",
+      "Looks like food",
+      "Wobbly stuff",
+      "Rides"
+    ]
+  },
+  {
+    "id": "spinarak",
+    "name": "Spinarak",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/167.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Wooden stuff",
+      "Garbage",
+      "Rides",
+      "Colorful stuff"
+    ]
+  },
+  {
+    "id": "ariados",
+    "name": "Ariados",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/168.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Wooden stuff",
+      "Garbage",
+      "Rides",
+      "Colorful stuff"
+    ]
+  },
+  {
+    "id": "mareep",
+    "name": "Mareep",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/179.png",
+    "favoriteCategories": [
+      "Electronics",
+      "Shiny stuff",
+      "Glass stuff",
+      "Cute stuff",
+      "Fabric"
+    ]
+  },
+  {
+    "id": "flaaffy",
+    "name": "Flaaffy",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/180.png",
+    "favoriteCategories": [
+      "Electronics",
+      "Shiny stuff",
+      "Glass stuff",
+      "Cute stuff",
+      "Rides"
+    ]
+  },
+  {
+    "id": "ampharos",
+    "name": "Ampharos",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/181.png",
+    "favoriteCategories": [
+      "Electronics",
+      "Shiny stuff",
+      "Glass stuff",
+      "Cute stuff",
+      "Pretty flowers"
+    ]
+  },
+  {
+    "id": "azurill",
+    "name": "Azurill",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/298.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Cute stuff",
+      "Cleanliness",
+      "Healing",
+      "Rides"
+    ]
+  },
+  {
+    "id": "marill",
+    "name": "Marill",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/183.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Cute stuff",
+      "Cleanliness",
+      "Round stuff",
+      "Symbols"
+    ]
+  },
+  {
+    "id": "azumarill",
+    "name": "Azumarill",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/184.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Cute stuff",
+      "Construction",
+      "Wobbly stuff",
+      "Symbols"
+    ]
+  },
+  {
+    "id": "paldean_wooper",
+    "name": "Paldean Wooper",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/194-p.png",
+    "favoriteCategories": [
+      "Garbage",
+      "Lots of dirt",
+      "Stone stuff",
+      "Cleanliness",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "clodsire",
+    "name": "Clodsire",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/980.png",
+    "favoriteCategories": [
+      "Garbage",
+      "Lots of dirt",
+      "Lots of water",
+      "Cleanliness",
+      "Round stuff"
+    ]
+  },
+  {
+    "id": "smeargle",
+    "name": "Smeargle",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/235-smearguru.png",
+    "favoriteCategories": [
+      "Soft stuff",
+      "Fabric",
+      "Strange stuff",
+      "Colorful stuff",
+      "Shiny stuff"
+    ]
+  },
+  {
+    "id": "torchic",
+    "name": "Torchic",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/255.png",
+    "favoriteCategories": [
+      "Lots of fire",
+      "Stone stuff",
+      "Cute stuff",
+      "Containers",
+      "Pretty flowers"
+    ]
+  },
+  {
+    "id": "combusken",
+    "name": "Combusken",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/256.png",
+    "favoriteCategories": [
+      "Lots of fire",
+      "Stone stuff",
+      "Exercise",
+      "Containers",
+      "Construction"
+    ]
+  },
+  {
+    "id": "blaziken",
+    "name": "Blaziken",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/257.png",
+    "favoriteCategories": [
+      "Lots of fire",
+      "Luxury",
+      "Exercise",
+      "Containers",
+      "Construction"
+    ]
+  },
+  {
+    "id": "wingull",
+    "name": "Wingull",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/278.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Nice breezes",
+      "Cleanliness",
+      "Ocean vibes",
+      "Watching stuff"
+    ]
+  },
+  {
+    "id": "pelipper",
+    "name": "Pelipper",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/279.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Nice breezes",
+      "Cleanliness",
+      "Ocean vibes",
+      "Watching stuff"
+    ]
+  },
+  {
+    "id": "makuhita",
+    "name": "Makuhita",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/296.png",
+    "favoriteCategories": [
+      "Exercise",
+      "Construction",
+      "Fabric",
+      "Round stuff",
+      "Wooden stuff"
+    ]
+  },
+  {
+    "id": "hariyama",
+    "name": "Hariyama",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/297.png",
+    "favoriteCategories": [
+      "Exercise",
+      "Construction",
+      "Fabric",
+      "Round stuff",
+      "Rides"
+    ]
+  },
+  {
+    "id": "absol",
+    "name": "Absol",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/359.png",
+    "favoriteCategories": [
+      "Soft stuff",
+      "Nice breezes",
+      "Letters and words",
+      "Complicated stuff",
+      "Exercise"
+    ]
+  },
+  {
+    "id": "piplup",
+    "name": "Piplup",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/393.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Ocean vibes",
+      "Nice breezes",
+      "Cleanliness",
+      "Containers"
+    ]
+  },
+  {
+    "id": "prinplup",
+    "name": "Prinplup",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/394.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Ocean vibes",
+      "Nice breezes",
+      "Cleanliness",
+      "Containers"
+    ]
+  },
+  {
+    "id": "empoleon",
+    "name": "Empoleon",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/395.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Ocean vibes",
+      "Metal stuff",
+      "Cleanliness",
+      "Letters and words"
+    ]
+  },
+  {
+    "id": "audino",
+    "name": "Audino",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/531.png",
+    "favoriteCategories": [
+      "Soft stuff",
+      "Fabric",
+      "Healing",
+      "Cute stuff",
+      "Round stuff"
+    ]
+  },
+  {
+    "id": "trubbish",
+    "name": "Trubbish",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/568.png",
+    "favoriteCategories": [
+      "Garbage",
+      "Construction",
+      "Complicated stuff",
+      "Shiny stuff",
+      "Gatherings"
+    ]
+  },
+  {
+    "id": "garbodor",
+    "name": "Garbodor",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/569.png",
+    "favoriteCategories": [
+      "Garbage",
+      "Containers",
+      "Complicated stuff",
+      "Shiny stuff",
+      "Gatherings"
+    ]
+  },
+  {
+    "id": "zorua",
+    "name": "Zorua",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/570.png",
+    "favoriteCategories": [
+      "Shiny stuff",
+      "Luxury",
+      "Glass stuff",
+      "Cute stuff",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "zoroark",
+    "name": "Zoroark",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/571.png",
+    "favoriteCategories": [
+      "Shiny stuff",
+      "Luxury",
+      "Glass stuff",
+      "Strange stuff",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "minccino",
+    "name": "Minccino",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/572.png",
+    "favoriteCategories": [
+      "Soft stuff",
+      "Fabric",
+      "Rides",
+      "Cute stuff",
+      "Cleanliness"
+    ]
+  },
+  {
+    "id": "cinccino",
+    "name": "Cinccino",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/573.png",
+    "favoriteCategories": [
+      "Soft stuff",
+      "Fabric",
+      "Rides",
+      "Cute stuff",
+      "Cleanliness"
+    ]
+  },
+  {
+    "id": "grubbin",
+    "name": "Grubbin",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/736.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Electronics",
+      "Watching stuff",
+      "Lots of dirt",
+      "Containers"
+    ]
+  },
+  {
+    "id": "charjabug",
+    "name": "Charjabug",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/737.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Electronics",
+      "Watching stuff",
+      "Glass stuff",
+      "Blocky stuff"
+    ]
+  },
+  {
+    "id": "vikavolt",
+    "name": "Vikavolt",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/738.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Electronics",
+      "Exercise",
+      "Glass stuff",
+      "Nice breezes"
+    ]
+  },
+  {
+    "id": "mimikyu",
+    "name": "Mimikyu",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/778.png",
+    "favoriteCategories": [
+      "Spooky stuff",
+      "Cute stuff",
+      "Electronics",
+      "Fabric",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "pawmi",
+    "name": "Pawmi",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/921.png",
+    "favoriteCategories": [
+      "Electronics",
+      "Shiny stuff",
+      "Cute stuff",
+      "Glass stuff",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "pawmo",
+    "name": "Pawmo",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/922.png",
+    "favoriteCategories": [
+      "Electronics",
+      "Shiny stuff",
+      "Exercise",
+      "Glass stuff",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "pawmot",
+    "name": "Pawmot",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/923.png",
+    "favoriteCategories": [
+      "Electronics",
+      "Shiny stuff",
+      "Exercise",
+      "Healing",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "tatsugiri_curly",
+    "name": "Tatsugiri (Curly)",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/978-tatsugiricurlyform.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Ocean vibes",
+      "Group Activities",
+      "Slender objects",
+      "Gatherings"
+    ]
+  },
+  {
+    "id": "tatsugiri_droopy",
+    "name": "Tatsugiri (Droopy)",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/978-tatsugiridroopyform.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Ocean vibes",
+      "Group Activities",
+      "Spinning stuff",
+      "Blocky stuff"
+    ]
+  },
+  {
+    "id": "tatsugiri_stretchy",
+    "name": "Tatsugiri (Stretchy)",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/978-tatsugiristretchyform.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Ocean vibes",
+      "Group Activities",
+      "Letters and words",
+      "Containers"
+    ]
+  },
+  {
+    "id": "ekans",
+    "name": "Ekans",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/023.png",
+    "favoriteCategories": [
+      "Garbage",
+      "Watching stuff",
+      "Lots of nature",
+      "Slender objects",
+      "Spinning stuff"
+    ]
+  },
+  {
+    "id": "arbok",
+    "name": "Arbok",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/024.png",
+    "favoriteCategories": [
+      "Garbage",
+      "Watching stuff",
+      "Lots of nature",
+      "Slender objects",
+      "Spinning stuff"
+    ]
+  },
+  {
+    "id": "cleffa",
+    "name": "Cleffa",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/173.png",
+    "favoriteCategories": [
+      "Cute stuff",
+      "Round stuff",
+      "Colorful stuff",
+      "Healing",
+      "Rides"
+    ]
+  },
+  {
+    "id": "clefairy",
+    "name": "Clefairy",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/035.png",
+    "favoriteCategories": [
+      "Cute stuff",
+      "Play spaces",
+      "Pretty flowers",
+      "Healing",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "clefable",
+    "name": "Clefable",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/036.png",
+    "favoriteCategories": [
+      "Cute stuff",
+      "Play spaces",
+      "Pretty flowers",
+      "Healing",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "igglybuff",
+    "name": "Igglybuff",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/174.png",
+    "favoriteCategories": [
+      "Soft stuff",
+      "Cute stuff",
+      "Play spaces",
+      "Healing",
+      "Noisy stuff"
+    ]
+  },
+  {
+    "id": "jigglypuff",
+    "name": "Jigglypuff",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/039.png",
+    "favoriteCategories": [
+      "Soft stuff",
+      "Cute stuff",
+      "Play spaces",
+      "Healing",
+      "Wobbly stuff"
+    ]
+  },
+  {
+    "id": "wigglytuff",
+    "name": "Wigglytuff",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/040.png",
+    "favoriteCategories": [
+      "Soft stuff",
+      "Cute stuff",
+      "Play spaces",
+      "Healing",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "diglett",
+    "name": "Diglett",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/050.png",
+    "favoriteCategories": [
+      "Lots of dirt",
+      "Play spaces",
+      "Cute stuff",
+      "Group Activities",
+      "Slender objects"
+    ]
+  },
+  {
+    "id": "dugtrio",
+    "name": "Dugtrio",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/051.png",
+    "favoriteCategories": [
+      "Lots of dirt",
+      "Play spaces",
+      "Gatherings",
+      "Group Activities",
+      "Slender objects"
+    ]
+  },
+  {
+    "id": "machop",
+    "name": "Machop",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/066.png",
+    "favoriteCategories": [
+      "Exercise",
+      "Construction",
+      "Stone stuff",
+      "Hard stuff",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "machoke",
+    "name": "Machoke",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/067.png",
+    "favoriteCategories": [
+      "Exercise",
+      "Construction",
+      "Stone stuff",
+      "Hard stuff",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "machamp",
+    "name": "Machamp",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/068.png",
+    "favoriteCategories": [
+      "Exercise",
+      "Construction",
+      "Stone stuff",
+      "Hard stuff",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "geodude",
+    "name": "Geodude",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/074.png",
+    "favoriteCategories": [
+      "Stone stuff",
+      "Hard stuff",
+      "Spinning stuff",
+      "Round stuff",
+      "Exercise"
+    ]
+  },
+  {
+    "id": "graveler",
+    "name": "Graveler",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/075.png",
+    "favoriteCategories": [
+      "Stone stuff",
+      "Hard stuff",
+      "Spinning stuff",
+      "Round stuff",
+      "Exercise"
+    ]
+  },
+  {
+    "id": "golem",
+    "name": "Golem",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/076.png",
+    "favoriteCategories": [
+      "Stone stuff",
+      "Hard stuff",
+      "Spinning stuff",
+      "Round stuff",
+      "Exercise"
+    ]
+  },
+  {
+    "id": "magby",
+    "name": "Magby",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/240.png",
+    "favoriteCategories": [
+      "Lots of fire",
+      "Stone stuff",
+      "Watching stuff",
+      "Cute stuff",
+      "Wobbly stuff"
+    ]
+  },
+  {
+    "id": "magmar",
+    "name": "Magmar",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/126.png",
+    "favoriteCategories": [
+      "Lots of fire",
+      "Stone stuff",
+      "Electronics",
+      "Hard stuff",
+      "Exercise"
+    ]
+  },
+  {
+    "id": "magmortar",
+    "name": "Magmortar",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/467.png",
+    "favoriteCategories": [
+      "Lots of fire",
+      "Stone stuff",
+      "Electronics",
+      "Hard stuff",
+      "Exercise"
+    ]
+  },
+  {
+    "id": "bonsly",
+    "name": "Bonsly",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/438.png",
+    "favoriteCategories": [
+      "Stone stuff",
+      "Hard stuff",
+      "Lots of nature",
+      "Wooden stuff",
+      "Round stuff"
+    ]
+  },
+  {
+    "id": "sudowoodo",
+    "name": "Sudowoodo",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/185.png",
+    "favoriteCategories": [
+      "Stone stuff",
+      "Hard stuff",
+      "Lots of nature",
+      "Wooden stuff",
+      "Watching stuff"
+    ]
+  },
+  {
+    "id": "murkrow",
+    "name": "Murkrow",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/198.png",
+    "favoriteCategories": [
+      "Shiny stuff",
+      "Nice breezes",
+      "Group Activities",
+      "Luxury",
+      "Fabric"
+    ]
+  },
+  {
+    "id": "honchkrow",
+    "name": "Honchkrow",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/430.png",
+    "favoriteCategories": [
+      "Shiny stuff",
+      "Nice breezes",
+      "Spooky stuff",
+      "Letters and words",
+      "Glass stuff"
+    ]
+  },
+  {
+    "id": "larvitar",
+    "name": "Larvitar",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/246.png",
+    "favoriteCategories": [
+      "Stone stuff",
+      "Lots of dirt",
+      "Luxury",
+      "Shiny stuff",
+      "Looks like food"
+    ]
+  },
+  {
+    "id": "pupitar",
+    "name": "Pupitar",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/247.png",
+    "favoriteCategories": [
+      "Stone stuff",
+      "Hard stuff",
+      "Luxury",
+      "Shiny stuff",
+      "Watching stuff"
+    ]
+  },
+  {
+    "id": "tyranitar",
+    "name": "Tyranitar",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/248.png",
+    "favoriteCategories": [
+      "Stone stuff",
+      "Hard stuff",
+      "Luxury",
+      "Shiny stuff",
+      "Exercise"
+    ]
+  },
+  {
+    "id": "lotad",
+    "name": "Lotad",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/270.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Lots of nature",
+      "Cleanliness",
+      "Containers",
+      "Noisy stuff"
+    ]
+  },
+  {
+    "id": "lombre",
+    "name": "Lombre",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/271.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Lots of nature",
+      "Cleanliness",
+      "Containers",
+      "Noisy stuff"
+    ]
+  },
+  {
+    "id": "ludicolo",
+    "name": "Ludicolo",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/272.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Lots of nature",
+      "Play spaces",
+      "Containers",
+      "Noisy stuff"
+    ]
+  },
+  {
+    "id": "mawile",
+    "name": "Mawile",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/303.png",
+    "favoriteCategories": [
+      "Metal stuff",
+      "Cute stuff",
+      "Colorful stuff",
+      "Looks like food",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "torkoal",
+    "name": "Torkoal",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/324.png",
+    "favoriteCategories": [
+      "Lots of fire",
+      "Stone stuff",
+      "Metal stuff",
+      "Hard stuff",
+      "Watching stuff"
+    ]
+  },
+  {
+    "id": "kricketot",
+    "name": "Kricketot",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/401.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Wooden stuff",
+      "Noisy stuff",
+      "Colorful stuff",
+      "Watching stuff"
+    ]
+  },
+  {
+    "id": "kricketune",
+    "name": "Kricketune",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/402.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Wooden stuff",
+      "Noisy stuff",
+      "Colorful stuff",
+      "Watching stuff"
+    ]
+  },
+  {
+    "id": "chatot",
+    "name": "Chatot",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/441.png",
+    "favoriteCategories": [
+      "Nice breezes",
+      "Fabric",
+      "Slender objects",
+      "Play spaces",
+      "Noisy stuff"
+    ]
+  },
+  {
+    "id": "riolu",
+    "name": "Riolu",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/447.png",
+    "favoriteCategories": [
+      "Exercise",
+      "Fabric",
+      "Construction",
+      "Gatherings",
+      "Watching stuff"
+    ]
+  },
+  {
+    "id": "lucario",
+    "name": "Lucario",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/448.png",
+    "favoriteCategories": [
+      "Exercise",
+      "Metal stuff",
+      "Construction",
+      "Complicated stuff",
+      "Healing"
+    ]
+  },
+  {
+    "id": "stereo_rotom",
+    "name": "Stereo Rotom",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/479-stereorotom.png",
+    "favoriteCategories": [
+      "Shiny stuff",
+      "Glass stuff",
+      "Noisy stuff",
+      "Group Activities",
+      "Blocky stuff"
+    ]
+  },
+  {
+    "id": "larvesta",
+    "name": "Larvesta",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/636.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Lots of fire",
+      "Sharp stuff",
+      "Wooden stuff",
+      "Symbols"
+    ]
+  },
+  {
+    "id": "volcarona",
+    "name": "Volcarona",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/637.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Lots of fire",
+      "Letters and words",
+      "Wooden stuff",
+      "Symbols"
+    ]
+  },
+  {
+    "id": "rowlet",
+    "name": "Rowlet",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/722.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Wooden stuff",
+      "Nice breezes",
+      "Containers",
+      "Spinning stuff"
+    ]
+  },
+  {
+    "id": "dartrix",
+    "name": "Dartrix",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/723.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Wooden stuff",
+      "Nice breezes",
+      "Slender objects",
+      "Cleanliness"
+    ]
+  },
+  {
+    "id": "decidueye",
+    "name": "Decidueye",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/724.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Spooky stuff",
+      "Wooden stuff",
+      "Nice breezes",
+      "Letters and words"
+    ]
+  },
+  {
+    "id": "scorbunny",
+    "name": "Scorbunny",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/813.png",
+    "favoriteCategories": [
+      "Lots of fire",
+      "Stone stuff",
+      "Soft stuff",
+      "Group Activities",
+      "Sharp stuff"
+    ]
+  },
+  {
+    "id": "raboot",
+    "name": "Raboot",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/814.png",
+    "favoriteCategories": [
+      "Lots of fire",
+      "Stone stuff",
+      "Play spaces",
+      "Group Activities",
+      "Containers"
+    ]
+  },
+  {
+    "id": "cinderace",
+    "name": "Cinderace",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/815.png",
+    "favoriteCategories": [
+      "Lots of fire",
+      "Stone stuff",
+      "Play spaces",
+      "Group Activities",
+      "Round stuff"
+    ]
+  },
+  {
+    "id": "skwovet",
+    "name": "Skwovet",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/819.png",
+    "favoriteCategories": [
+      "Soft stuff",
+      "Wooden stuff",
+      "Watching stuff",
+      "Looks like food",
+      "Round stuff"
+    ]
+  },
+  {
+    "id": "greedent",
+    "name": "Greedent",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/820-cook.png",
+    "favoriteCategories": [
+      "Soft stuff",
+      "Metal stuff",
+      "Group Activities",
+      "Looks like food",
+      "Luxury"
+    ]
+  },
+  {
+    "id": "rolycoly",
+    "name": "Rolycoly",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/837.png",
+    "favoriteCategories": [
+      "Stone stuff",
+      "Lots of fire",
+      "Hard stuff",
+      "Metal stuff",
+      "Rides"
+    ]
+  },
+  {
+    "id": "carkol",
+    "name": "Carkol",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/838.png",
+    "favoriteCategories": [
+      "Stone stuff",
+      "Lots of fire",
+      "Hard stuff",
+      "Metal stuff",
+      "Rides"
+    ]
+  },
+  {
+    "id": "coalossal",
+    "name": "Coalossal",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/839.png",
+    "favoriteCategories": [
+      "Stone stuff",
+      "Lots of fire",
+      "Hard stuff",
+      "Metal stuff",
+      "Rides"
+    ]
+  },
+  {
+    "id": "toxel",
+    "name": "Toxel",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/848.png",
+    "favoriteCategories": [
+      "Electronics",
+      "Shiny stuff",
+      "Noisy stuff",
+      "Glass stuff",
+      "Garbage"
+    ]
+  },
+  {
+    "id": "toxtricity_amped",
+    "name": "Toxtricity (Amped)",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/849-toxtricityampedform.png",
+    "favoriteCategories": [
+      "Electronics",
+      "Play spaces",
+      "Noisy stuff",
+      "Slender objects",
+      "Sharp stuff"
+    ]
+  },
+  {
+    "id": "toxtricity_low_key",
+    "name": "Toxtricity (Low Key)",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/849-toxtricitylowkeyform.png",
+    "favoriteCategories": [
+      "Electronics",
+      "Play spaces",
+      "Noisy stuff",
+      "Slender objects",
+      "Sharp stuff"
+    ]
+  },
+  {
+    "id": "fidough",
+    "name": "Fidough",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/926.png",
+    "favoriteCategories": [
+      "Cute stuff",
+      "Watching stuff",
+      "Soft stuff",
+      "Lots of fire",
+      "Letters and words"
+    ]
+  },
+  {
+    "id": "dachsbun",
+    "name": "Dachsbun",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/927.png",
+    "favoriteCategories": [
+      "Cute stuff",
+      "Watching stuff",
+      "Group Activities",
+      "Lots of fire",
+      "Looks like food"
+    ]
+  },
+  {
+    "id": "charcadet",
+    "name": "Charcadet",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/935.png",
+    "favoriteCategories": [
+      "Lots of fire",
+      "Stone stuff",
+      "Strange stuff",
+      "Exercise",
+      "Luxury"
+    ]
+  },
+  {
+    "id": "armarouge",
+    "name": "Armarouge",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/936.png",
+    "favoriteCategories": [
+      "Lots of fire",
+      "Stone stuff",
+      "Strange stuff",
+      "Exercise",
+      "Luxury"
+    ]
+  },
+  {
+    "id": "ceruledge",
+    "name": "Ceruledge",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/937.png",
+    "favoriteCategories": [
+      "Lots of fire",
+      "Stone stuff",
+      "Spooky stuff",
+      "Strange stuff",
+      "Luxury"
+    ]
+  },
+  {
+    "id": "glimmet",
+    "name": "Glimmet",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/969.png",
+    "favoriteCategories": [
+      "Stone stuff",
+      "Hard stuff",
+      "Garbage",
+      "Shiny stuff",
+      "Complicated stuff"
+    ]
+  },
+  {
+    "id": "glimmora",
+    "name": "Glimmora",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/970.png",
+    "favoriteCategories": [
+      "Stone stuff",
+      "Hard stuff",
+      "Garbage",
+      "Shiny stuff",
+      "Complicated stuff"
+    ]
+  },
+  {
+    "id": "gimmighoul",
+    "name": "Gimmighoul",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/999.png",
+    "favoriteCategories": [
+      "Spooky stuff",
+      "Metal stuff",
+      "Strange stuff",
+      "Shiny stuff",
+      "Complicated stuff"
+    ]
+  },
+  {
+    "id": "gholdengo",
+    "name": "Gholdengo",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/1000.png",
+    "favoriteCategories": [
+      "Spooky stuff",
+      "Metal stuff",
+      "Strange stuff",
+      "Shiny stuff",
+      "Complicated stuff"
+    ]
+  },
+  {
+    "id": "vulpix",
+    "name": "Vulpix",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/037.png",
+    "favoriteCategories": [
+      "Lots of fire",
+      "Soft stuff",
+      "Cute stuff",
+      "Round stuff",
+      "Pretty flowers"
+    ]
+  },
+  {
+    "id": "ninetales",
+    "name": "Ninetales",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/038.png",
+    "favoriteCategories": [
+      "Lots of fire",
+      "Soft stuff",
+      "Watching stuff",
+      "Luxury",
+      "Pretty flowers"
+    ]
+  },
+  {
+    "id": "poliwag",
+    "name": "Poliwag",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/060.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Cleanliness",
+      "Round stuff",
+      "Rides",
+      "Spinning stuff"
+    ]
+  },
+  {
+    "id": "poliwhirl",
+    "name": "Poliwhirl",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/061.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Cleanliness",
+      "Lots of nature",
+      "Exercise",
+      "Spinning stuff"
+    ]
+  },
+  {
+    "id": "poliwrath",
+    "name": "Poliwrath",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/062.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Cleanliness",
+      "Construction",
+      "Exercise",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "politoed",
+    "name": "Politoed",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/186.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Play spaces",
+      "Noisy stuff",
+      "Gatherings",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "abra",
+    "name": "Abra",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/063.png",
+    "favoriteCategories": [
+      "Strange stuff",
+      "Wobbly stuff",
+      "Metal stuff",
+      "Soft stuff",
+      "Watching stuff"
+    ]
+  },
+  {
+    "id": "kadabra",
+    "name": "Kadabra",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/064.png",
+    "favoriteCategories": [
+      "Strange stuff",
+      "Wobbly stuff",
+      "Metal stuff",
+      "Containers",
+      "Watching stuff"
+    ]
+  },
+  {
+    "id": "alakazam",
+    "name": "Alakazam",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/065.png",
+    "favoriteCategories": [
+      "Strange stuff",
+      "Wobbly stuff",
+      "Metal stuff",
+      "Letters and words",
+      "Watching stuff"
+    ]
+  },
+  {
+    "id": "mime_jr",
+    "name": "Mime Jr.",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/439.png",
+    "favoriteCategories": [
+      "Strange stuff",
+      "Cute stuff",
+      "Rides",
+      "Play spaces",
+      "Colorful stuff"
+    ]
+  },
+  {
+    "id": "mr_mime",
+    "name": "Mr. Mime",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/122.png",
+    "favoriteCategories": [
+      "Strange stuff",
+      "Cute stuff",
+      "Rides",
+      "Wobbly stuff",
+      "Watching stuff"
+    ]
+  },
+  {
+    "id": "porygon",
+    "name": "Porygon",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/137.png",
+    "favoriteCategories": [
+      "Soft stuff",
+      "Strange stuff",
+      "Blocky stuff",
+      "Construction",
+      "Colorful stuff"
+    ]
+  },
+  {
+    "id": "porygon2",
+    "name": "Porygon2",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/233.png",
+    "favoriteCategories": [
+      "Soft stuff",
+      "Strange stuff",
+      "Round stuff",
+      "Construction",
+      "Colorful stuff"
+    ]
+  },
+  {
+    "id": "porygon_z",
+    "name": "Porygon-Z",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/474.png",
+    "favoriteCategories": [
+      "Soft stuff",
+      "Strange stuff",
+      "Fabric",
+      "Watching stuff",
+      "Colorful stuff"
+    ]
+  },
+  {
+    "id": "dratini",
+    "name": "Dratini",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/147.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Lots of fire",
+      "Cleanliness",
+      "Cute stuff",
+      "Slender objects"
+    ]
+  },
+  {
+    "id": "dragonair",
+    "name": "Dragonair",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/148.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Lots of fire",
+      "Cleanliness",
+      "Glass stuff",
+      "Slender objects"
+    ]
+  },
+  {
+    "id": "dragonite",
+    "name": "Dragonite",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/149.png",
+    "favoriteCategories": [
+      "Lots of fire",
+      "Nice breezes",
+      "Cleanliness",
+      "Symbols",
+      "Pretty flowers"
+    ]
+  },
+  {
+    "id": "cyndaquil",
+    "name": "Cyndaquil",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/155.png",
+    "favoriteCategories": [
+      "Lots of fire",
+      "Fabric",
+      "Slender objects",
+      "Metal stuff",
+      "Rides"
+    ]
+  },
+  {
+    "id": "quilava",
+    "name": "Quilava",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/156.png",
+    "favoriteCategories": [
+      "Lots of fire",
+      "Fabric",
+      "Slender objects",
+      "Metal stuff",
+      "Rides"
+    ]
+  },
+  {
+    "id": "typhlosion",
+    "name": "Typhlosion",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/157.png",
+    "favoriteCategories": [
+      "Lots of fire",
+      "Fabric",
+      "Slender objects",
+      "Metal stuff",
+      "Rides"
+    ]
+  },
+  {
+    "id": "misdreavus",
+    "name": "Misdreavus",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/200.png",
+    "favoriteCategories": [
+      "Spooky stuff",
+      "Strange stuff",
+      "Shiny stuff",
+      "Colorful stuff",
+      "Watching stuff"
+    ]
+  },
+  {
+    "id": "mismagius",
+    "name": "Mismagius",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/429.png",
+    "favoriteCategories": [
+      "Spooky stuff",
+      "Strange stuff",
+      "Noisy stuff",
+      "Wobbly stuff",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "girafarig",
+    "name": "Girafarig",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/203.png",
+    "favoriteCategories": [
+      "Soft stuff",
+      "Strange stuff",
+      "Rides",
+      "Watching stuff",
+      "Slender objects"
+    ]
+  },
+  {
+    "id": "farigiraf",
+    "name": "Farigiraf",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/981.png",
+    "favoriteCategories": [
+      "Soft stuff",
+      "Strange stuff",
+      "Rides",
+      "Watching stuff",
+      "Slender objects"
+    ]
+  },
+  {
+    "id": "ralts",
+    "name": "Ralts",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/280.png",
+    "favoriteCategories": [
+      "Strange stuff",
+      "Cute stuff",
+      "Healing",
+      "Watching stuff",
+      "Symbols"
+    ]
+  },
+  {
+    "id": "kirlia",
+    "name": "Kirlia",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/281.png",
+    "favoriteCategories": [
+      "Strange stuff",
+      "Cute stuff",
+      "Healing",
+      "Watching stuff",
+      "Symbols"
+    ]
+  },
+  {
+    "id": "gardevoir",
+    "name": "Gardevoir",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/282.png",
+    "favoriteCategories": [
+      "Strange stuff",
+      "Luxury",
+      "Healing",
+      "Watching stuff",
+      "Symbols"
+    ]
+  },
+  {
+    "id": "gallade",
+    "name": "Gallade",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/475.png",
+    "favoriteCategories": [
+      "Strange stuff",
+      "Exercise",
+      "Healing",
+      "Construction",
+      "Fabric"
+    ]
+  },
+  {
+    "id": "plusle",
+    "name": "Plusle",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/311.png",
+    "favoriteCategories": [
+      "Electronics",
+      "Glass stuff",
+      "Soft stuff",
+      "Cute stuff",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "minun",
+    "name": "Minun",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/312.png",
+    "favoriteCategories": [
+      "Electronics",
+      "Glass stuff",
+      "Soft stuff",
+      "Cute stuff",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "trapinch",
+    "name": "Trapinch",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/328.png",
+    "favoriteCategories": [
+      "Lots of dirt",
+      "Hard stuff",
+      "Strange stuff",
+      "Watching stuff",
+      "Exercise"
+    ]
+  },
+  {
+    "id": "vibrava",
+    "name": "Vibrava",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/329.png",
+    "favoriteCategories": [
+      "Lots of dirt",
+      "Lots of fire",
+      "Lots of nature",
+      "Luxury",
+      "Noisy stuff"
+    ]
+  },
+  {
+    "id": "flygon",
+    "name": "Flygon",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/330.png",
+    "favoriteCategories": [
+      "Lots of dirt",
+      "Lots of fire",
+      "Lots of nature",
+      "Stone stuff",
+      "Wooden stuff"
+    ]
+  },
+  {
+    "id": "swablu",
+    "name": "Swablu",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/333.png",
+    "favoriteCategories": [
+      "Soft stuff",
+      "Nice breezes",
+      "Cute stuff",
+      "Watching stuff",
+      "Cleanliness"
+    ]
+  },
+  {
+    "id": "altaria",
+    "name": "Altaria",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/334.png",
+    "favoriteCategories": [
+      "Soft stuff",
+      "Nice breezes",
+      "Cute stuff",
+      "Watching stuff",
+      "Noisy stuff"
+    ]
+  },
+  {
+    "id": "duskull",
+    "name": "Duskull",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/355.png",
+    "favoriteCategories": [
+      "Spooky stuff",
+      "Strange stuff",
+      "Rides",
+      "Glass stuff",
+      "Fabric"
+    ]
+  },
+  {
+    "id": "dusclops",
+    "name": "Dusclops",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/356.png",
+    "favoriteCategories": [
+      "Spooky stuff",
+      "Strange stuff",
+      "Rides",
+      "Soft stuff",
+      "Containers"
+    ]
+  },
+  {
+    "id": "dusknoir",
+    "name": "Dusknoir",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/477.png",
+    "favoriteCategories": [
+      "Spooky stuff",
+      "Strange stuff",
+      "Rides",
+      "Group Activities",
+      "Containers"
+    ]
+  },
+  {
+    "id": "beldum",
+    "name": "Beldum",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/374.png",
+    "favoriteCategories": [
+      "Metal stuff",
+      "Strange stuff",
+      "Hard stuff",
+      "Complicated stuff",
+      "Stone stuff"
+    ]
+  },
+  {
+    "id": "metang",
+    "name": "Metang",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/375.png",
+    "favoriteCategories": [
+      "Metal stuff",
+      "Strange stuff",
+      "Hard stuff",
+      "Complicated stuff",
+      "Stone stuff"
+    ]
+  },
+  {
+    "id": "metagross",
+    "name": "Metagross",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/376.png",
+    "favoriteCategories": [
+      "Metal stuff",
+      "Strange stuff",
+      "Hard stuff",
+      "Exercise",
+      "Luxury"
+    ]
+  },
+  {
+    "id": "snivy",
+    "name": "Snivy",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/495.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Wooden stuff",
+      "Lots of water",
+      "Wobbly stuff",
+      "Shiny stuff"
+    ]
+  },
+  {
+    "id": "servine",
+    "name": "Servine",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/496.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Wooden stuff",
+      "Lots of water",
+      "Cleanliness",
+      "Shiny stuff"
+    ]
+  },
+  {
+    "id": "serperior",
+    "name": "Serperior",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/497.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Wooden stuff",
+      "Lots of water",
+      "Containers",
+      "Slender objects"
+    ]
+  },
+  {
+    "id": "froakie",
+    "name": "Froakie",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/656.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Ocean vibes",
+      "Cleanliness",
+      "Watching stuff",
+      "Containers"
+    ]
+  },
+  {
+    "id": "frogadier",
+    "name": "Frogadier",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/657.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Ocean vibes",
+      "Cleanliness",
+      "Watching stuff",
+      "Exercise"
+    ]
+  },
+  {
+    "id": "greninja",
+    "name": "Greninja",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/658.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Ocean vibes",
+      "Cleanliness",
+      "Shiny stuff",
+      "Exercise"
+    ]
+  },
+  {
+    "id": "dedenne",
+    "name": "Dedenne",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/702.png",
+    "favoriteCategories": [
+      "Electronics",
+      "Cute stuff",
+      "Watching stuff",
+      "Group Activities",
+      "Looks like food"
+    ]
+  },
+  {
+    "id": "noibat",
+    "name": "Noibat",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/714.png",
+    "favoriteCategories": [
+      "Nice breezes",
+      "Lots of fire",
+      "Watching stuff",
+      "Luxury",
+      "Looks like food"
+    ]
+  },
+  {
+    "id": "noivern",
+    "name": "Noivern",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/715.png",
+    "favoriteCategories": [
+      "Nice breezes",
+      "Lots of fire",
+      "Watching stuff",
+      "Play spaces",
+      "Looks like food"
+    ]
+  },
+  {
+    "id": "rookidee",
+    "name": "Rookidee",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/821.png",
+    "favoriteCategories": [
+      "Nice breezes",
+      "Shiny stuff",
+      "Containers",
+      "Slender objects",
+      "Wooden stuff"
+    ]
+  },
+  {
+    "id": "corvisquire",
+    "name": "Corvisquire",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/822.png",
+    "favoriteCategories": [
+      "Nice breezes",
+      "Shiny stuff",
+      "Containers",
+      "Slender objects",
+      "Wooden stuff"
+    ]
+  },
+  {
+    "id": "corviknight",
+    "name": "Corviknight",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/823.png",
+    "favoriteCategories": [
+      "Nice breezes",
+      "Metal stuff",
+      "Shiny stuff",
+      "Containers",
+      "Wooden stuff"
+    ]
+  },
+  {
+    "id": "dreepy",
+    "name": "Dreepy",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/885.png",
+    "favoriteCategories": [
+      "Lots of fire",
+      "Spooky stuff",
+      "Rides",
+      "Strange stuff",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "drakloak",
+    "name": "Drakloak",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/886.png",
+    "favoriteCategories": [
+      "Lots of fire",
+      "Spooky stuff",
+      "Rides",
+      "Strange stuff",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "dragapult",
+    "name": "Dragapult",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/887.png",
+    "favoriteCategories": [
+      "Lots of fire",
+      "Spooky stuff",
+      "Rides",
+      "Strange stuff",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "sprigatito",
+    "name": "Sprigatito",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/906.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Pretty flowers",
+      "Containers",
+      "Colorful stuff",
+      "Cute stuff"
+    ]
+  },
+  {
+    "id": "floragato",
+    "name": "Floragato",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/907.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Pretty flowers",
+      "Sharp stuff",
+      "Colorful stuff",
+      "Cute stuff"
+    ]
+  },
+  {
+    "id": "meowscarada",
+    "name": "Meowscarada",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/908.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Pretty flowers",
+      "Shiny stuff",
+      "Luxury",
+      "Cute stuff"
+    ]
+  },
+  {
+    "id": "wattrel",
+    "name": "Wattrel",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/940.png",
+    "favoriteCategories": [
+      "Electronics",
+      "Nice breezes",
+      "Ocean vibes",
+      "Gatherings",
+      "Complicated stuff"
+    ]
+  },
+  {
+    "id": "kilowattrel",
+    "name": "Kilowattrel",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/941.png",
+    "favoriteCategories": [
+      "Electronics",
+      "Nice breezes",
+      "Ocean vibes",
+      "Gatherings",
+      "Slender objects"
+    ]
+  },
+  {
+    "id": "tinkatink",
+    "name": "Tinkatink",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/957.png",
+    "favoriteCategories": [
+      "Cute stuff",
+      "Metal stuff",
+      "Construction",
+      "Looks like food",
+      "Exercise"
+    ]
+  },
+  {
+    "id": "tinkatuff",
+    "name": "Tinkatuff",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/958.png",
+    "favoriteCategories": [
+      "Cute stuff",
+      "Metal stuff",
+      "Construction",
+      "Group Activities",
+      "Exercise"
+    ]
+  },
+  {
+    "id": "tinkaton",
+    "name": "Tinkaton",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/959-tinkmeister.png",
+    "favoriteCategories": [
+      "Cute stuff",
+      "Metal stuff",
+      "Construction",
+      "Blocky stuff",
+      "Exercise"
+    ]
+  },
+  {
+    "id": "aerodactyl",
+    "name": "Aerodactyl",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/142.png",
+    "favoriteCategories": [
+      "Stone stuff",
+      "Nice breezes",
+      "Hard stuff",
+      "Shiny stuff",
+      "Spinning stuff"
+    ]
+  },
+  {
+    "id": "cranidos",
+    "name": "Cranidos",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/408.png",
+    "favoriteCategories": [
+      "Stone stuff",
+      "Hard stuff",
+      "Wobbly stuff",
+      "Group Activities",
+      "Exercise"
+    ]
+  },
+  {
+    "id": "rampardos",
+    "name": "Rampardos",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/409.png",
+    "favoriteCategories": [
+      "Stone stuff",
+      "Hard stuff",
+      "Metal stuff",
+      "Luxury",
+      "Exercise"
+    ]
+  },
+  {
+    "id": "shieldon",
+    "name": "Shieldon",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/410.png",
+    "favoriteCategories": [
+      "Stone stuff",
+      "Hard stuff",
+      "Metal stuff",
+      "Luxury",
+      "Round stuff"
+    ]
+  },
+  {
+    "id": "bastiodon",
+    "name": "Bastiodon",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/411.png",
+    "favoriteCategories": [
+      "Stone stuff",
+      "Hard stuff",
+      "Metal stuff",
+      "Luxury",
+      "Exercise"
+    ]
+  },
+  {
+    "id": "tyrunt",
+    "name": "Tyrunt",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/696.png",
+    "favoriteCategories": [
+      "Stone stuff",
+      "Hard stuff",
+      "Lots of fire",
+      "Luxury",
+      "Exercise"
+    ]
+  },
+  {
+    "id": "tyrantrum",
+    "name": "Tyrantrum",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/697.png",
+    "favoriteCategories": [
+      "Stone stuff",
+      "Hard stuff",
+      "Lots of fire",
+      "Luxury",
+      "Exercise"
+    ]
+  },
+  {
+    "id": "amaura",
+    "name": "Amaura",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/698.png",
+    "favoriteCategories": [
+      "Stone stuff",
+      "Hard stuff",
+      "Shiny stuff",
+      "Group Activities",
+      "Containers"
+    ]
+  },
+  {
+    "id": "aurorus",
+    "name": "Aurorus",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/699.png",
+    "favoriteCategories": [
+      "Stone stuff",
+      "Hard stuff",
+      "Shiny stuff",
+      "Noisy stuff",
+      "Symbols"
+    ]
+  },
+  {
+    "id": "eevee",
+    "name": "Eevee",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/133.png",
+    "favoriteCategories": [
+      "Soft stuff",
+      "Stone stuff",
+      "Cute stuff",
+      "Letters and words",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "vaporeon",
+    "name": "Vaporeon",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/134.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Cleanliness",
+      "Cute stuff",
+      "Pretty flowers",
+      "Watching stuff"
+    ]
+  },
+  {
+    "id": "jolteon",
+    "name": "Jolteon",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/135.png",
+    "favoriteCategories": [
+      "Electronics",
+      "Shiny stuff",
+      "Cute stuff",
+      "Glass stuff",
+      "Sharp stuff"
+    ]
+  },
+  {
+    "id": "flareon",
+    "name": "Flareon",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/136.png",
+    "favoriteCategories": [
+      "Lots of fire",
+      "Wooden stuff",
+      "Cute stuff",
+      "Metal stuff",
+      "Rides"
+    ]
+  },
+  {
+    "id": "espeon",
+    "name": "Espeon",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/196.png",
+    "favoriteCategories": [
+      "Strange stuff",
+      "Nice breezes",
+      "Cute stuff",
+      "Complicated stuff",
+      "Watching stuff"
+    ]
+  },
+  {
+    "id": "umbreon",
+    "name": "Umbreon",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/197.png",
+    "favoriteCategories": [
+      "Shiny stuff",
+      "Luxury",
+      "Cute stuff",
+      "Letters and words",
+      "Watching stuff"
+    ]
+  },
+  {
+    "id": "leafeon",
+    "name": "Leafeon",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/470.png",
+    "favoriteCategories": [
+      "Lots of nature",
+      "Pretty flowers",
+      "Cute stuff",
+      "Fabric",
+      "Healing"
+    ]
+  },
+  {
+    "id": "glaceon",
+    "name": "Glaceon",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/471.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Shiny stuff",
+      "Cute stuff",
+      "Glass stuff",
+      "Group Activities"
+    ]
+  },
+  {
+    "id": "sylveon",
+    "name": "Sylveon",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/700.png",
+    "favoriteCategories": [
+      "Cute stuff",
+      "Lots of nature",
+      "Fabric",
+      "Noisy stuff",
+      "Round stuff"
+    ]
+  },
+  {
+    "id": "kyogre",
+    "name": "Kyogre",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/382.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Ocean vibes",
+      "Luxury",
+      "Shiny stuff",
+      "Glass stuff"
+    ]
+  },
+  {
+    "id": "raikou",
+    "name": "Raikou",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/243.png",
+    "favoriteCategories": [
+      "Electronics",
+      "Nice breezes",
+      "Shiny stuff",
+      "Glass stuff",
+      "Luxury"
+    ]
+  },
+  {
+    "id": "entei",
+    "name": "Entei",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/244.png",
+    "favoriteCategories": [
+      "Lots of fire",
+      "Stone stuff",
+      "Symbols",
+      "Exercise",
+      "Luxury"
+    ]
+  },
+  {
+    "id": "suicune",
+    "name": "Suicune",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/245.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Ocean vibes",
+      "Cleanliness",
+      "Watching stuff",
+      "Healing"
+    ]
+  },
+  {
+    "id": "volcanion",
+    "name": "Volcanion",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/721.png",
+    "favoriteCategories": [
+      "Lots of fire",
+      "Lots of water",
+      "Stone stuff",
+      "Containers",
+      "Symbols"
+    ]
+  },
+  {
+    "id": "articuno",
+    "name": "Articuno",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/144.png",
+    "favoriteCategories": [
+      "Lots of water",
+      "Nice breezes",
+      "Shiny stuff",
+      "Symbols",
+      "Luxury"
+    ]
+  },
+  {
+    "id": "zapdos",
+    "name": "Zapdos",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/145.png",
+    "favoriteCategories": [
+      "Electronics",
+      "Nice breezes",
+      "Glass stuff",
+      "Symbols",
+      "Luxury"
+    ]
+  },
+  {
+    "id": "moltres",
+    "name": "Moltres",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/146.png",
+    "favoriteCategories": [
+      "Lots of fire",
+      "Nice breezes",
+      "Stone stuff",
+      "Symbols",
+      "Luxury"
+    ]
+  },
+  {
+    "id": "lugia",
+    "name": "Lugia",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/249.png",
+    "favoriteCategories": [
+      "Strange stuff",
+      "Nice breezes",
+      "Lots of water",
+      "Ocean vibes",
+      "Symbols"
+    ]
+  },
+  {
+    "id": "ho_oh",
+    "name": "Ho-Oh",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/250.png",
+    "favoriteCategories": [
+      "Lots of fire",
+      "Wooden stuff",
+      "Nice breezes",
+      "Lots of nature",
+      "Symbols"
+    ]
+  },
+  {
+    "id": "mewtwo",
+    "name": "Mewtwo",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/150.png",
+    "favoriteCategories": [
+      "Strange stuff",
+      "Watching stuff",
+      "Letters and words",
+      "Complicated stuff",
+      "Stone stuff"
+    ]
+  },
+  {
+    "id": "mew",
+    "name": "Mew",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/151.png",
+    "favoriteCategories": [
+      "Strange stuff",
+      "Watching stuff",
+      "Luxury",
+      "Complicated stuff",
+      "Play spaces"
+    ]
+  },
+  {
+    "id": "hoppip",
+    "name": "Hoppip",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/187.png",
+    "favoriteCategories": [
+      "Soft stuff",
+      "Lots of nature",
+      "Nice breezes",
+      "Pretty flowers",
+      "Wobbly stuff"
+    ]
+  },
+  {
+    "id": "skiploom",
+    "name": "Skiploom",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/188.png",
+    "favoriteCategories": [
+      "Soft stuff",
+      "Lots of nature",
+      "Nice breezes",
+      "Pretty flowers",
+      "Spinning stuff"
+    ]
+  },
+  {
+    "id": "jumpluff",
+    "name": "Jumpluff",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/189.png",
+    "favoriteCategories": [
+      "Soft stuff",
+      "Lots of nature",
+      "Nice breezes",
+      "Pretty flowers",
+      "Round stuff"
+    ]
+  },
+  {
+    "id": "sableye",
+    "name": "Sableye",
+    "spriteUrl": "https://www.serebii.net/pokemonpokopia/pokemon/small/302.png",
+    "favoriteCategories": [
+      "Spooky stuff",
+      "Shiny stuff",
+      "Luxury",
+      "Looks like food",
+      "Watching stuff"
+    ]
+  }
+]

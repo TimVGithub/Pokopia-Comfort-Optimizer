@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pokopia Habitat Comfort Optimizer</title>
+<style>
+    body {
+        font-family: Verdana, Arial, sans-serif;
+        font-size: 12px;
+        background-color: #ffffff;
+        color: #000000;
+        margin: 10px;
+    }
+    h1 {
+        font-size: 18px;
+        background-color: #2f5496;
+        color: #ffffff;
+        padding: 6px 10px;
+        margin: 0 0 10px 0;
+    }
+    h2 {
+        font-size: 14px;
+        background-color: #4a4a4a;
+        color: #ffffff;
+        padding: 4px 8px;
+        margin: 20px 0 0 0;
+    }
+
+    /* Loading overlay */
+    #loadingOverlay {
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(255,255,255,0.9);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        font-weight: bold;
+        z-index: 999;
+    }
+
+    /* Selection area */
+    .selector-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        border: 1px solid #999999;
+        background-color: #f2f2f2;
+        padding: 10px;
+    }
+    .selector-box {
+        border: 1px solid #cccccc;
+        background-color: #ffffff;
+        padding: 8px;
+        width: 200px;
+        text-align: center;
+    }
+    .selector-box label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 4px;
+    }
+    .selector-box select {
+        width: 100%;
+        font-family: Verdana, Arial, sans-serif;
+        font-size: 12px;
+        padding: 2px;
+        margin-bottom: 6px;
+    }
+    .selector-box img {
+        max-width: 80px;
+        max-height: 80px;
+        display: block;
+        margin: 4px auto;
+    }
+    .selector-box .pkmn-name {
+        font-weight: bold;
+    }
+
+    /* Synergy badges */
+    .badge-area {
+        border: 1px solid #999999;
+        padding: 8px;
+        background-color: #ffffff;
+    }
+    .badge {
+        display: inline-block;
+        padding: 3px 8px;
+        margin: 3px;
+        border: 1px solid #999999;
+        background-color: #e8e8e8;
+        color: #000000;
+        font-size: 11px;
+        border-radius: 3px;
+    }
+    .badge.overlap {
+        background-color: #c6efce;
+        color: #006100;
+        font-weight: bold;
+        border: 1px solid #006100;
+    }
+
+    /* Serebii-style table */
+    table.serebii-table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 5px;
+        font-size: 12px;
+    }
+    table.serebii-table th,
+    table.serebii-table td {
+        border: 1px solid #999999;
+        padding: 4px 6px;
+        text-align: left;
+        vertical-align: middle;
+    }
+    table.serebii-table th.header {
+        background-color: #2f5496;
+        color: #ffffff;
+        text-align: center;
+    }
+    table.serebii-table tr.alt-row {
+        background-color: #f2f2f2;
+    }
+    table.serebii-table tr.norm-row {
+        background-color: #ffffff;
+    }
+    table.serebii-table img {
+        max-width: 50px;
+        max-height: 50px;
+        display: block;
+        margin: 0 auto;
+    }
+    .no-items-msg {
+        padding: 8px;
+        font-style: italic;
+        color: #666666;
+    }
+
+    /* Accordion */
+    h2.accordion-header {
+        cursor: pointer;
+        user-select: none;
+        position: relative;
+    }
+    h2.accordion-header::after {
+        content: "\25B2"; /* up arrow = expanded */
+        position: absolute;
+        right: 10px;
+    }
+    h2.accordion-header.collapsed::after {
+        content: "\25BC"; /* down arrow = collapsed */
+    }
+    .accordion-content {
+        overflow: hidden;
+    }
+    .accordion-content.collapsed {
+        display: none;
+    }
+</style>
+</head>
+<body>
+
+<div id="loadingOverlay">Loading data...</div>
+
+<h1>Pokopia Habitat Comfort Optimizer</h1>
+
+<!-- ============================================ -->
+<!-- SELECTION AREA: 4 Pokemon dropdowns          -->
+<!-- ============================================ -->
+<h2 class="header">Select Pokemon (up to 4)</h2>
+<div class="selector-grid">
+    <div class="selector-box">
+        <label for="pkmnSelect0">Pokemon Slot 1</label>
+        <select id="pkmnSelect0" data-slot="0"></select>
+        <img id="pkmnSprite0" src="" alt="" style="display:none;">
+        <div class="pkmn-name" id="pkmnName0"></div>
+    </div>
+    <div class="selector-box">
+        <label for="pkmnSelect1">Pokemon Slot 2</label>
+        <select id="pkmnSelect1" data-slot="1"></select>
+        <img id="pkmnSprite1" src="" alt="" style="display:none;">
+        <div class="pkmn-name" id="pkmnName1"></div>
+    </div>
+    <div class="selector-box">
+        <label for="pkmnSelect2">Pokemon Slot 3</label>
+        <select id="pkmnSelect2" data-slot="2"></select>
+        <img id="pkmnSprite2" src="" alt="" style="display:none;">
+        <div class="pkmn-name" id="pkmnName2"></div>
+    </div>
+    <div class="selector-box">
+        <label for="pkmnSelect3">Pokemon Slot 4</label>
+        <select id="pkmnSelect3" data-slot="3"></select>
+        <img id="pkmnSprite3" src="" alt="" style="display:none;">
+        <div class="pkmn-name" id="pkmnName3"></div>
+    </div>
+</div>
+
+<!-- ============================================ -->
+<!-- SYNERGY SUMMARY                              -->
+<!-- ============================================ -->
+<h2 class="header">Synergy Summary (Pooled Favorite Categories)</h2>
+<div class="badge-area" id="synergyArea">
+    <span class="no-items-msg">Select at least one Pokemon to see category synergy.</span>
+</div>
+
+<!-- ============================================ -->
+<!-- OPTIMIZATION TABLES                          -->
+<!-- ============================================ -->
+<h2 class="header accordion-header" data-target="toyTableContainer">Toy Recommendations</h2>
+<div id="toyTableContainer" class="accordion-content"></div>
+
+<h2 class="header accordion-header" data-target="relaxationTableContainer">Relaxation Recommendations</h2>
+<div id="relaxationTableContainer" class="accordion-content"></div>
+
+<h2 class="header accordion-header" data-target="decorationTableContainer">Decoration Recommendations</h2>
+<div id="decorationTableContainer" class="accordion-content"></div>
+
+<h2 class="header accordion-header" data-target="noneTableContainer">Other Recommendations</h2>
+<div id="noneTableContainer" class="accordion-content"></div>
+
+
+<script>
+/* ================================================================
+   GLOBAL STATE
+   ================================================================ */
+var allPokemon = [];      // Full list of pokemon loaded from pokemon.json
+var allItems = [];        // Full list of items loaded from items.json
+var selectedPokemon = [null, null, null, null]; // Currently selected pokemon objects per slot (or null)
+
+
+/* ================================================================
+   DATA LOADING
+   ================================================================ */
+
+// Fetch both JSON files asynchronously, then initialize the app once both resolve.
+function loadData() {
+    var pokemonPromise = fetch('pokemon.json').then(function(res) {
+        return res.json();
+    });
+
+    var itemsPromise = fetch('items.json').then(function(res) {
+        return res.json();
+    });
+
+    Promise.all([pokemonPromise, itemsPromise])
+        .then(function(results) {
+            allPokemon = results[0];
+            allItems = results[1];
+
+            initializeDropdowns();
+            renderAll();
+
+            // Hide loading overlay once data is ready
+            document.getElementById('loadingOverlay').style.display = 'none';
+        })
+        .catch(function(err) {
+            document.getElementById('loadingOverlay').textContent =
+                'Error loading data: ' + err.message + ' (Run via local HTTP server)';
+        });
+}
+
+
+/* ================================================================
+   INITIALIZATION
+   ================================================================ */
+
+// Populate the 4 select dropdowns with every pokemon, plus a blank "None" option.
+function initializeDropdowns() {
+    for (var slot = 0; slot < 4; slot++) {
+        var selectEl = document.getElementById('pkmnSelect' + slot);
+
+        // Blank/None option
+        var blankOption = document.createElement('option');
+        blankOption.value = '';
+        blankOption.textContent = '-- None --';
+        selectEl.appendChild(blankOption);
+
+        // One option per pokemon
+        for (var i = 0; i < allPokemon.length; i++) {
+            var p = allPokemon[i];
+            var opt = document.createElement('option');
+            opt.value = p.id;
+            opt.textContent = p.name;
+            selectEl.appendChild(opt);
+        }
+
+        // Attach change listener
+        selectEl.addEventListener('change', onPokemonSelectChange);
+    }
+}
+
+// Handler for when a pokemon dropdown changes.
+function onPokemonSelectChange(event) {
+    var slot = parseInt(event.target.getAttribute('data-slot'), 10);
+    var pokemonId = event.target.value;
+
+    if (pokemonId === '') {
+        selectedPokemon[slot] = null;
+    } else {
+        selectedPokemon[slot] = findPokemonById(pokemonId);
+    }
+
+    renderAll();
+}
+
+
+/* ================================================================
+   LOOKUP HELPERS
+   ================================================================ */
+
+function findPokemonById(id) {
+    for (var i = 0; i < allPokemon.length; i++) {
+        if (allPokemon[i].id === id) {
+            return allPokemon[i];
+        }
+    }
+    return null;
+}
+
+// Returns array of currently selected (non-null) pokemon objects.
+function getActivePokemon() {
+    var active = [];
+    for (var i = 0; i < selectedPokemon.length; i++) {
+        if (selectedPokemon[i] !== null) {
+            active.push(selectedPokemon[i]);
+        }
+    }
+    return active;
+}
+
+
+/* ================================================================
+   CALCULATION LOGIC
+   (Pure functions: take data in, return computed data, no DOM access)
+   ================================================================ */
+
+// Given the active pokemon list, compute a category frequency map.
+// Returns an object: { categoryName: countOfPokemonThatLikeIt }
+function calculateCategoryFrequency(activePokemon) {
+    var freq = {};
+
+    for (var i = 0; i < activePokemon.length; i++) {
+        var categories = activePokemon[i].favoriteCategories;
+        for (var j = 0; j < categories.length; j++) {
+            var cat = categories[j];
+            if (freq.hasOwnProperty(cat)) {
+                freq[cat] = freq[cat] + 1;
+            } else {
+                freq[cat] = 1;
+            }
+        }
+    }
+
+    return freq;
+}
+
+// Given the active pokemon list and a single item, calculate:
+// - matchedCategories: array of category names that intersect with item.categories
+// - satisfiedDetails: array of strings like "Pikachu (Active)" for each pokemon/category match
+function calculateItemMatch(item, activePokemon) {
+    var matchedCategories = [];
+
+    // For each category this item provides, check if it's matched by any active pokemon
+    for (var c = 0; c < item.categories.length; c++) {
+        var itemCategory = item.categories[c];
+        var matchedThisCategory = false;
+
+        for (var p = 0; p < activePokemon.length; p++) {
+            if (activePokemon[p].favoriteCategories.indexOf(itemCategory) !== -1) {
+                matchedThisCategory = true;
+                break;
+            }
+        }
+
+        if (matchedThisCategory) {
+            matchedCategories.push(itemCategory);
+        }
+    }
+
+    // Build satisfiedDetails grouped per pokemon: "Name (Cat1, Cat2, ...)"
+    var satisfiedDetails = [];
+    for (var p2 = 0; p2 < activePokemon.length; p2++) {
+        var pkmn = activePokemon[p2];
+        var pkmnMatchedCats = [];
+
+        for (var c2 = 0; c2 < matchedCategories.length; c2++) {
+            var cat = matchedCategories[c2];
+            if (pkmn.favoriteCategories.indexOf(cat) !== -1) {
+                pkmnMatchedCats.push(cat);
+            }
+        }
+
+        if (pkmnMatchedCats.length > 0) {
+            satisfiedDetails.push(pkmn.name + ' (' + pkmnMatchedCats.join(', ') + ')');
+        }
+    }
+
+    return {
+        matchedCategories: matchedCategories,
+        totalMatches: matchedCategories.length,
+        satisfiedDetails: satisfiedDetails
+    };
+}
+
+// Filter and compute match data for all items of a given type, given active pokemon.
+// Returns array of objects: { item: <item>, totalMatches, matchedCategories, satisfiedDetails }
+// Only includes items where totalMatches > 0.
+// Sorted by totalMatches descending.
+function calculateItemsForType(itemType, activePokemon) {
+    var results = [];
+
+    for (var i = 0; i < allItems.length; i++) {
+        var item = allItems[i];
+
+        if (item.type !== itemType) {
+            continue;
+        }
+
+        var matchData = calculateItemMatch(item, activePokemon);
+
+        if (matchData.totalMatches > 0) {
+            results.push({
+                item: item,
+                totalMatches: matchData.totalMatches,
+                matchedCategories: matchData.matchedCategories,
+                satisfiedDetails: matchData.satisfiedDetails
+            });
+        }
+    }
+
+    // Sort descending by totalMatches
+    results.sort(function(a, b) {
+        return b.totalMatches - a.totalMatches;
+    });
+
+    return results;
+}
+
+
+/* ================================================================
+   RENDERING LOGIC
+   (DOM manipulation only: takes pre-calculated data and draws it)
+   ================================================================ */
+
+// Master render function: re-renders sprites, synergy badges, and all 3 tables.
+function renderAll() {
+    renderSelectedSprites();
+
+    var activePokemon = getActivePokemon();
+    var categoryFreq = calculateCategoryFrequency(activePokemon);
+
+    renderSynergyBadges(categoryFreq);
+
+    renderItemTable('toyTableContainer', 'Toy', activePokemon);
+    renderItemTable('relaxationTableContainer', 'Relaxation', activePokemon);
+    renderItemTable('decorationTableContainer', 'Decoration', activePokemon);
+    renderItemTable('noneTableContainer', 'None', activePokemon);
+}
+
+// Update the sprite/name display under each dropdown.
+function renderSelectedSprites() {
+    for (var slot = 0; slot < 4; slot++) {
+        var imgEl = document.getElementById('pkmnSprite' + slot);
+        var nameEl = document.getElementById('pkmnName' + slot);
+        var pkmn = selectedPokemon[slot];
+
+        if (pkmn !== null) {
+            imgEl.src = pkmn.spriteUrl;
+            imgEl.alt = pkmn.name;
+            imgEl.style.display = 'block';
+            nameEl.textContent = pkmn.name;
+        } else {
+            imgEl.src = '';
+            imgEl.style.display = 'none';
+            nameEl.textContent = '';
+        }
+    }
+}
+
+// Render the pooled category badges. Categories liked by 2+ selected pokemon get
+// the bright green "overlap" highlight.
+function renderSynergyBadges(categoryFreq) {
+    var container = document.getElementById('synergyArea');
+    container.innerHTML = '';
+
+    var categoryNames = Object.keys(categoryFreq);
+
+    if (categoryNames.length === 0) {
+        var msg = document.createElement('span');
+        msg.className = 'no-items-msg';
+        msg.textContent = 'Select at least one Pokemon to see category synergy.';
+        container.appendChild(msg);
+        return;
+    }
+
+    // Sort alphabetically for consistent display
+    categoryNames.sort();
+
+    for (var i = 0; i < categoryNames.length; i++) {
+        var catName = categoryNames[i];
+        var count = categoryFreq[catName];
+
+        var badge = document.createElement('span');
+        badge.className = 'badge';
+        if (count >= 2) {
+            badge.className += ' overlap';
+        }
+
+        badge.textContent = catName + ' (' + count + ')';
+        container.appendChild(badge);
+    }
+}
+
+// Render a single optimization table (Toy / Relaxation / Decoration) into the given container.
+function renderItemTable(containerId, itemType, activePokemon) {
+    var container = document.getElementById(containerId);
+    container.innerHTML = '';
+
+    if (activePokemon.length === 0) {
+        var msg = document.createElement('div');
+        msg.className = 'no-items-msg';
+        msg.textContent = 'Select at least one Pokemon to see ' + itemType.toLowerCase() + ' recommendations.';
+        container.appendChild(msg);
+        return;
+    }
+
+    var matchedItems = calculateItemsForType(itemType, activePokemon);
+
+    if (matchedItems.length === 0) {
+        var noMatchMsg = document.createElement('div');
+        noMatchMsg.className = 'no-items-msg';
+        noMatchMsg.textContent = 'No matching ' + itemType.toLowerCase() + ' items found for the current selection.';
+        container.appendChild(noMatchMsg);
+        return;
+    }
+
+    // Build table
+    var table = document.createElement('table');
+    table.className = 'serebii-table';
+
+    // Header row
+    var thead = document.createElement('thead');
+    var headerRow = document.createElement('tr');
+
+    var headers = ['Image', 'Item Name', 'Total Matches', 'Categories Met', 'Pokemon Satisfied'];
+    for (var h = 0; h < headers.length; h++) {
+        var th = document.createElement('th');
+        th.className = 'header';
+        th.textContent = headers[h];
+        headerRow.appendChild(th);
+    }
+    thead.appendChild(headerRow);
+    table.appendChild(thead);
+
+    // Body rows
+    var tbody = document.createElement('tbody');
+
+    for (var r = 0; r < matchedItems.length; r++) {
+        var rowData = matchedItems[r];
+        var tr = document.createElement('tr');
+        tr.className = (r % 2 === 0) ? 'norm-row' : 'alt-row';
+
+        // Image cell
+        var tdImg = document.createElement('td');
+        var img = document.createElement('img');
+        img.src = rowData.item.imageUrl;
+        img.alt = rowData.item.name;
+        tdImg.appendChild(img);
+        tr.appendChild(tdImg);
+
+        // Item Name cell
+        var tdName = document.createElement('td');
+        tdName.textContent = rowData.item.name;
+        tr.appendChild(tdName);
+
+        // Total Matches cell
+        var tdMatches = document.createElement('td');
+        tdMatches.textContent = rowData.totalMatches;
+        tdMatches.style.textAlign = 'center';
+        tr.appendChild(tdMatches);
+
+        // Categories Met cell
+        var tdCategories = document.createElement('td');
+        tdCategories.textContent = rowData.matchedCategories.join(', ');
+        tr.appendChild(tdCategories);
+
+        // Pokemon Satisfied cell
+        var tdSatisfied = document.createElement('td');
+        tdSatisfied.textContent = rowData.satisfiedDetails.join(', ');
+        tr.appendChild(tdSatisfied);
+
+        tbody.appendChild(tr);
+    }
+
+    table.appendChild(tbody);
+    container.appendChild(table);
+}
+
+
+/* ================================================================
+   ACCORDION LOGIC
+   ================================================================ */
+
+// Attach click handlers to all accordion headers to toggle their content visibility.
+function initAccordions() {
+    var headers = document.querySelectorAll('.accordion-header');
+
+    for (var i = 0; i < headers.length; i++) {
+        headers[i].addEventListener('click', function() {
+            var targetId = this.getAttribute('data-target');
+            var content = document.getElementById(targetId);
+
+            this.classList.toggle('collapsed');
+            content.classList.toggle('collapsed');
+        });
+    }
+}
+
+
+/* ================================================================
+   ENTRY POINT
+   ================================================================ */
+document.addEventListener('DOMContentLoaded', function() {
+    initAccordions();
+    loadData();
+});
+</script>
+
+</body>
+</html>
