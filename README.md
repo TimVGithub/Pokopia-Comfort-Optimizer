@@ -1,10 +1,10 @@
 # Pokopia Habitat Comfort Optimizer
 
-A vanilla JavaScript optimization utility designed to calculate the best items for habitats based on pooled Pokémon favorite categories[cite: 7].
+A vanilla JavaScript optimization utility designed to calculate the best items for habitats based on pooled Pokémon favorite categories.
 
 ## Data Schema Requirements
 
-The JavaScript functions expect two arrays of objects[cite: 7]. If you are pulling this from a MySQL database via PHP, you can echo the data as JSON directly into `allPokemon` and `allItems` on page load[cite: 7].
+The JavaScript functions expect two arrays of objects. If you are pulling this from a MySQL database via PHP, you can echo the data as JSON directly into `allPokemon` and `allItems` on page load.
 
 ### Pokémon Object Schema
 ```JSON
