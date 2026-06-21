@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pokopia Habitat Comfort Optimizer</title>
 <style>
+    /* ── Base ── */
     body {
         font-family: Verdana, Arial, sans-serif;
         font-size: 12px;
@@ -27,11 +28,11 @@
         margin: 20px 0 0 0;
     }
 
-    /* Loading overlay */
+    /* ── Loading overlay ── */
     #loadingOverlay {
         position: fixed;
-        top: 0; left: 0; right: 0; bottom: 0;
-        background: rgba(255,255,255,0.9);
+        inset: 0;
+        background: rgba(255, 255, 255, 0.9);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -40,7 +41,17 @@
         z-index: 999;
     }
 
-    /* Selection area */
+    /* ── Credits bar ── */
+    .credits-bar {
+        border: 1px solid #999999;
+        background-color: #f2f2f2;
+        padding: 6px 10px;
+        margin-bottom: 10px;
+        font-size: 11px;
+        line-height: 1.6;
+    }
+
+    /* ── Pokémon selection area ── */
     .selector-grid {
         display: flex;
         flex-wrap: wrap;
@@ -55,19 +66,53 @@
         padding: 8px;
         width: 200px;
         text-align: center;
+        box-sizing: border-box;
     }
     .selector-box label {
         display: block;
         font-weight: bold;
         margin-bottom: 4px;
     }
-    .selector-box select {
-        width: 100%;
-        font-family: Verdana, Arial, sans-serif;
-        font-size: 12px;
-        padding: 2px;
+
+    /* Input + clear button sit side-by-side in a flex row */
+    .search-row {
+        display: flex;
+        align-items: center;
+        gap: 4px;
         margin-bottom: 6px;
     }
+    .pkmn-input {
+        flex: 1;
+        min-width: 0;          /* allow flex shrink past intrinsic width */
+        font-family: Verdana, Arial, sans-serif;
+        font-size: 12px;
+        padding: 3px 5px;
+        border: 1px solid #cccccc;
+        box-sizing: border-box;
+    }
+    /* Red flash when input text is invalid / not matched */
+    .pkmn-input.invalid {
+        border-color: #cc0000;
+        background-color: #fff0f0;
+    }
+    /* Clear (×) button */
+    .clear-btn {
+        flex-shrink: 0;
+        width: 22px;
+        height: 22px;
+        padding: 0;
+        font-size: 14px;
+        line-height: 1;
+        cursor: pointer;
+        border: 1px solid #999999;
+        background-color: #e8e8e8;
+        color: #333333;
+        font-family: Verdana, Arial, sans-serif;
+    }
+    .clear-btn:hover {
+        background-color: #cccccc;
+    }
+
     .selector-box img {
         max-width: 80px;
         max-height: 80px;
@@ -76,9 +121,16 @@
     }
     .selector-box .pkmn-name {
         font-weight: bold;
+        min-height: 16px; /* prevent layout jump when empty */
+    }
+    /* Small hint text below each input */
+    .slot-hint {
+        font-size: 10px;
+        color: #888888;
+        margin-bottom: 4px;
     }
 
-    /* Synergy badges */
+    /* ── Synergy badges ── */
     .badge-area {
         border: 1px solid #999999;
         padding: 8px;
@@ -101,7 +153,7 @@
         border: 1px solid #006100;
     }
 
-    /* Serebii-style table */
+    /* ── Serebii-style data table ── */
     table.serebii-table {
         border-collapse: collapse;
         width: 100%;
@@ -120,43 +172,55 @@
         color: #ffffff;
         text-align: center;
     }
-    table.serebii-table tr.alt-row {
-        background-color: #f2f2f2;
-    }
-    table.serebii-table tr.norm-row {
-        background-color: #ffffff;
-    }
+    table.serebii-table tr.alt-row  { background-color: #f2f2f2; }
+    table.serebii-table tr.norm-row { background-color: #ffffff;  }
     table.serebii-table img {
         max-width: 50px;
         max-height: 50px;
         display: block;
         margin: 0 auto;
     }
+
+    /* High-value match score highlight (>= HIGH_MATCH_THRESHOLD) */
+    td.high-match {
+        background-color: #c6efce;
+        color: #006100;
+        font-weight: bold;
+        text-align: center;
+    }
+    td.low-match { text-align: center; }
+
+    /* ── Placeholder / empty state ── */
     .no-items-msg {
         padding: 8px;
         font-style: italic;
         color: #666666;
     }
 
-    /* Accordion */
-    h2.accordion-header {
+    /* ── Native <details> accordion ── */
+    details.accordion { margin-top: 20px; }
+    details.accordion > summary {
+        font-size: 14px;
+        font-weight: bold;
+        background-color: #4a4a4a;
+        color: #ffffff;
+        padding: 4px 8px;
         cursor: pointer;
         user-select: none;
+        list-style: none;
         position: relative;
     }
-    h2.accordion-header::after {
-        content: "\25B2"; /* up arrow = expanded */
+    details.accordion > summary::-webkit-details-marker { display: none; }
+    details.accordion > summary::marker               { display: none; }
+    details.accordion > summary::after {
+        content: "\25BC";
         position: absolute;
         right: 10px;
     }
-    h2.accordion-header.collapsed::after {
-        content: "\25BC"; /* down arrow = collapsed */
-    }
-    .accordion-content {
-        overflow: hidden;
-    }
-    .accordion-content.collapsed {
-        display: none;
+    details.accordion[open] > summary::after { content: "\25B2"; }
+    details.accordion > summary:focus-visible {
+        outline: 2px solid #ffcc00;
+        outline-offset: -2px;
     }
 </style>
 </head>
@@ -164,145 +228,350 @@
 
 <div id="loadingOverlay">Loading data...</div>
 
+<!--
+    Single shared datalist — rebuilt by syncDatalist() whenever the
+    selection state changes so already-chosen Pokémon are excluded
+    from other slots' suggestion lists.
+-->
+<datalist id="pokemonList"></datalist>
+
 <h1>Pokopia Habitat Comfort Optimizer</h1>
 
-<!-- ============================================ -->
-<!-- SELECTION AREA: 4 Pokemon dropdowns          -->
-<!-- ============================================ -->
-<h2 class="header">Select Pokemon (up to 4)</h2>
+<!-- CREDITS / CONTACT -->
+<div class="credits-bar">
+    <strong>Data:</strong> Game data, category mapping, and imagery sourced from
+    <a href="https://www.serebii.net/">Serebii.net</a>.
+    All credit for the underlying database goes to Joe Merrick and the Serebii team.
+    &nbsp;|&nbsp;
+    <strong>Mechanics:</strong> Comfort mechanic research adapted from community testing by
+    <a href="https://www.reddit.com/user/calmthesehands">u/calmthesehands</a> on
+    <a href="https://www.reddit.com/r/Pokopia/comments/1ruvefs/did_some_testing_with_favorite_items_comfort/">r/Pokopia</a>.
+    &nbsp;|&nbsp;
+    <strong>Contact:</strong> DM <a href="https://www.reddit.com/user/timmytamsAU">u/timmytamsAU</a> on Reddit.
+</div>
+
+<!-- POKÉMON SELECTION -->
+<h2>Select Pokémon (up to 4)</h2>
 <div class="selector-grid">
+
     <div class="selector-box">
-        <label for="pkmnSelect0">Pokemon Slot 1</label>
-        <select id="pkmnSelect0" data-slot="0"></select>
+        <label for="pkmnInput0">Pokémon Slot 1</label>
+        <div class="search-row">
+            <input id="pkmnInput0" class="pkmn-input" type="text"
+                   list="pokemonList" data-slot="0"
+                   placeholder="Search Pokémon"
+                   autocomplete="off">
+            <button class="clear-btn" data-slot="0" title="Clear slot">×</button>
+        </div>
+        <div class="slot-hint">Type to filter, then tap/click a name</div>
         <img id="pkmnSprite0" src="" alt="" style="display:none;">
         <div class="pkmn-name" id="pkmnName0"></div>
     </div>
+
     <div class="selector-box">
-        <label for="pkmnSelect1">Pokemon Slot 2</label>
-        <select id="pkmnSelect1" data-slot="1"></select>
+        <label for="pkmnInput1">Pokémon Slot 2</label>
+        <div class="search-row">
+            <input id="pkmnInput1" class="pkmn-input" type="text"
+                   list="pokemonList" data-slot="1"
+                   placeholder="Search Pokémon"
+                   autocomplete="off">
+            <button class="clear-btn" data-slot="1" title="Clear slot">×</button>
+        </div>
+        <div class="slot-hint">Type to filter, then tap/click a name</div>
         <img id="pkmnSprite1" src="" alt="" style="display:none;">
         <div class="pkmn-name" id="pkmnName1"></div>
     </div>
+
     <div class="selector-box">
-        <label for="pkmnSelect2">Pokemon Slot 3</label>
-        <select id="pkmnSelect2" data-slot="2"></select>
+        <label for="pkmnInput2">Pokémon Slot 3</label>
+        <div class="search-row">
+            <input id="pkmnInput2" class="pkmn-input" type="text"
+                   list="pokemonList" data-slot="2"
+                   placeholder="Search Pokémon"
+                   autocomplete="off">
+            <button class="clear-btn" data-slot="2" title="Clear slot">×</button>
+        </div>
+        <div class="slot-hint">Type to filter, then tap/click a name</div>
         <img id="pkmnSprite2" src="" alt="" style="display:none;">
         <div class="pkmn-name" id="pkmnName2"></div>
     </div>
+
     <div class="selector-box">
-        <label for="pkmnSelect3">Pokemon Slot 4</label>
-        <select id="pkmnSelect3" data-slot="3"></select>
+        <label for="pkmnInput3">Pokémon Slot 4</label>
+        <div class="search-row">
+            <input id="pkmnInput3" class="pkmn-input" type="text"
+                   list="pokemonList" data-slot="3"
+                   placeholder="Search Pokémon"
+                   autocomplete="off">
+            <button class="clear-btn" data-slot="3" title="Clear slot">×</button>
+        </div>
+        <div class="slot-hint">Type to filter, then tap/click a name</div>
         <img id="pkmnSprite3" src="" alt="" style="display:none;">
         <div class="pkmn-name" id="pkmnName3"></div>
     </div>
+
 </div>
 
-<!-- ============================================ -->
-<!-- SYNERGY SUMMARY                              -->
-<!-- ============================================ -->
-<h2 class="header">Synergy Summary (Pooled Favorite Categories)</h2>
+<!-- SYNERGY SUMMARY -->
+<h2>Synergy Summary (Pooled Favourite Categories)</h2>
 <div class="badge-area" id="synergyArea">
-    <span class="no-items-msg">Select at least one Pokemon to see category synergy.</span>
+    <span class="no-items-msg">Select at least one Pokémon to see category synergy.</span>
 </div>
 
-<!-- ============================================ -->
-<!-- OPTIMIZATION TABLES                          -->
-<!-- ============================================ -->
-<h2 class="header accordion-header" data-target="toyTableContainer">Toy Recommendations</h2>
-<div id="toyTableContainer" class="accordion-content"></div>
+<!-- OPTIMISATION TABLES — native <details> accordions, open by default -->
+<details class="accordion" open>
+    <summary>Toy Recommendations</summary>
+    <div id="toyTableContainer"></div>
+</details>
 
-<h2 class="header accordion-header" data-target="relaxationTableContainer">Relaxation Recommendations</h2>
-<div id="relaxationTableContainer" class="accordion-content"></div>
+<details class="accordion" open>
+    <summary>Relaxation Recommendations</summary>
+    <div id="relaxationTableContainer"></div>
+</details>
 
-<h2 class="header accordion-header" data-target="decorationTableContainer">Decoration Recommendations</h2>
-<div id="decorationTableContainer" class="accordion-content"></div>
+<details class="accordion" open>
+    <summary>Decoration Recommendations</summary>
+    <div id="decorationTableContainer"></div>
+</details>
 
-<h2 class="header accordion-header" data-target="noneTableContainer">Other Recommendations</h2>
-<div id="noneTableContainer" class="accordion-content"></div>
+<details class="accordion" open>
+    <summary>Consumables &amp; Collectibles</summary>
+    <div id="noneTableContainer"></div>
+</details>
 
 
 <script>
+'use strict';
+
+/* ================================================================
+   CONSTANTS
+   ================================================================ */
+
+// Human-readable label for each item type (used in empty-state messages).
+const SECTION_LABELS = {
+    Toy:         'toy',
+    Relaxation:  'relaxation',
+    Decoration:  'decoration',
+    None:        'consumable & collectible',
+};
+
+// "Total Matches" cells at or above this value receive the green highlight.
+const HIGH_MATCH_THRESHOLD = 3;
+
+
 /* ================================================================
    GLOBAL STATE
    ================================================================ */
-var allPokemon = [];      // Full list of pokemon loaded from pokemon.json
-var allItems = [];        // Full list of items loaded from items.json
-var selectedPokemon = [null, null, null, null]; // Currently selected pokemon objects per slot (or null)
+
+let allPokemon      = [];                        // Populated from pokemon.json
+let allItems        = [];                        // Populated from items.json
+let selectedPokemon = [null, null, null, null];  // One entry per slot; null = empty
 
 
 /* ================================================================
    DATA LOADING
+   Both JSON files are fetched in parallel. All category strings are
+   normalised to lowercase immediately at the data boundary so every
+   downstream comparison is case-insensitive regardless of source.
    ================================================================ */
 
-// Fetch both JSON files asynchronously, then initialize the app once both resolve.
 function loadData() {
-    var pokemonPromise = fetch('pokemon.json').then(function(res) {
-        return res.json();
+    Promise.all([
+        fetch('pokemon.json').then(r => r.json()),
+        fetch('items.json').then(r => r.json()),
+    ])
+    .then(([pokemonData, itemsData]) => {
+
+        allPokemon = pokemonData.map(p => ({
+            ...p,
+            favoriteCategories: p.favoriteCategories.map(c => c.toLowerCase()),
+        }));
+
+        allItems = itemsData.map(item => ({
+            ...item,
+            categories: item.categories.map(c => c.toLowerCase()),
+        }));
+
+        initializeInputs();
+        syncDatalist();
+        renderAll();
+        document.getElementById('loadingOverlay').style.display = 'none';
+    })
+    .catch(err => {
+        document.getElementById('loadingOverlay').textContent =
+            `Error loading data: ${err.message} — serve via: python -m http.server 8000`;
     });
-
-    var itemsPromise = fetch('items.json').then(function(res) {
-        return res.json();
-    });
-
-    Promise.all([pokemonPromise, itemsPromise])
-        .then(function(results) {
-            allPokemon = results[0];
-            allItems = results[1];
-
-            initializeDropdowns();
-            renderAll();
-
-            // Hide loading overlay once data is ready
-            document.getElementById('loadingOverlay').style.display = 'none';
-        })
-        .catch(function(err) {
-            document.getElementById('loadingOverlay').textContent =
-                'Error loading data: ' + err.message + ' (Run via local HTTP server)';
-        });
 }
 
 
 /* ================================================================
-   INITIALIZATION
+   INPUT INITIALISATION
+   Attaches event listeners to all four text inputs and their
+   companion clear buttons. No options are injected into the inputs
+   themselves — the shared <datalist> is managed separately.
    ================================================================ */
 
-// Populate the 4 select dropdowns with every pokemon, plus a blank "None" option.
-function initializeDropdowns() {
-    for (var slot = 0; slot < 4; slot++) {
-        var selectEl = document.getElementById('pkmnSelect' + slot);
+function initializeInputs() {
+    for (let slot = 0; slot < 4; slot++) {
+        const inputEl = document.getElementById(`pkmnInput${slot}`);
+        const clearEl = document.querySelector(`.clear-btn[data-slot="${slot}"]`);
 
-        // Blank/None option
-        var blankOption = document.createElement('option');
-        blankOption.value = '';
-        blankOption.textContent = '-- None --';
-        selectEl.appendChild(blankOption);
+        // "input" fires on every keystroke AND immediately after the user
+        // picks a suggestion from the datalist dropdown on mobile/desktop.
+        inputEl.addEventListener('input', onPokemonInput);
 
-        // One option per pokemon
-        for (var i = 0; i < allPokemon.length; i++) {
-            var p = allPokemon[i];
-            var opt = document.createElement('option');
-            opt.value = p.id;
-            opt.textContent = p.name;
-            selectEl.appendChild(opt);
-        }
+        // "blur" fires when the field loses focus. We use it to clean up
+        // any partial / invalid text the user may have typed but not committed.
+        inputEl.addEventListener('blur', onPokemonBlur);
 
-        // Attach change listener
-        selectEl.addEventListener('change', onPokemonSelectChange);
+        // Clear button resets the slot to null and wipes the input text.
+        clearEl.addEventListener('click', () => onClearSlot(slot));
     }
 }
 
-// Handler for when a pokemon dropdown changes.
-function onPokemonSelectChange(event) {
-    var slot = parseInt(event.target.getAttribute('data-slot'), 10);
-    var pokemonId = event.target.value;
 
-    if (pokemonId === '') {
-        selectedPokemon[slot] = null;
-    } else {
-        selectedPokemon[slot] = findPokemonById(pokemonId);
+/* ================================================================
+   INPUT EVENT HANDLERS
+   ================================================================ */
+
+/**
+ * Fires on every keystroke and on datalist pick.
+ * Validates the current text against allPokemon. On a valid match,
+ * commits the Pokémon to that slot and triggers a full re-render.
+ * On partial / empty text, clears the slot without re-rendering the
+ * tables (to avoid flickering while the user is still typing).
+ */
+function onPokemonInput(event) {
+    const inputEl = event.target;
+    const slot    = parseInt(inputEl.getAttribute('data-slot'), 10);
+    const text    = inputEl.value.trim();
+
+    // Remove any previous invalid styling while the user is actively typing.
+    inputEl.classList.remove('invalid');
+
+    if (text === '') {
+        // Slot cleared by the user manually erasing the text.
+        commitSlot(slot, null);
+        inputEl.value = '';
+        syncDatalist();
+        renderAll();
+        return;
     }
 
+    const matched = findPokemonByName(text);
+
+    if (matched) {
+        // Guard against selecting a Pokémon already chosen in another slot.
+        const takenByOtherSlot = selectedPokemon.some(
+            (p, i) => i !== slot && p?.id === matched.id
+        );
+
+        if (takenByOtherSlot) {
+            // Flash invalid styling and reset — no state change.
+            inputEl.classList.add('invalid');
+            commitSlot(slot, null);
+            syncDatalist();
+            renderAll();
+            return;
+        }
+
+        // Valid, unique pick — commit and render.
+        commitSlot(slot, matched);
+        syncDatalist();
+        renderAll();
+    } else {
+        // Text doesn't match any Pokémon yet. Treat the slot as empty
+        // (tables update live) but don't mark the field invalid — the
+        // user may still be mid-type. Invalid styling is applied on blur.
+        commitSlot(slot, null);
+        syncDatalist();
+        renderAll();
+    }
+}
+
+/**
+ * Fires when the input loses focus.
+ * If the field contains text that still doesn't resolve to a valid
+ * Pokémon, clear it and flash the invalid style briefly so the user
+ * understands their entry wasn't accepted.
+ */
+function onPokemonBlur(event) {
+    const inputEl = event.target;
+    const slot    = parseInt(inputEl.getAttribute('data-slot'), 10);
+    const text    = inputEl.value.trim();
+
+    if (text !== '' && !findPokemonByName(text)) {
+        inputEl.classList.add('invalid');
+
+        // Clear the text and the invalid class after a brief visual moment.
+        setTimeout(() => {
+            inputEl.value = '';
+            inputEl.classList.remove('invalid');
+            commitSlot(slot, null);
+            syncDatalist();
+            renderAll();
+        }, 600);
+    }
+}
+
+/**
+ * Fires when the × button for a slot is clicked.
+ * Wipes the input text and nulls the slot.
+ */
+function onClearSlot(slot) {
+    const inputEl = document.getElementById(`pkmnInput${slot}`);
+    inputEl.value = '';
+    inputEl.classList.remove('invalid');
+    commitSlot(slot, null);
+    syncDatalist();
     renderAll();
+}
+
+/**
+ * Writes a Pokémon object (or null) into the selectedPokemon state array
+ * for the given slot. Single source of truth for state mutation.
+ */
+function commitSlot(slot, pkmnOrNull) {
+    selectedPokemon[slot] = pkmnOrNull;
+}
+
+
+/* ================================================================
+   DATALIST SYNC  (duplicate prevention)
+   The single shared <datalist id="pokemonList"> is rebuilt from
+   scratch on every state change. Pokémon that are already committed
+   in another slot are excluded from the options list, so the mobile
+   suggestion UI will never surface them as valid choices.
+
+   Note: because all four inputs share the same datalist, a name
+   that's already selected elsewhere simply won't appear as a
+   suggestion. Combined with the "takenByOtherSlot" guard in
+   onPokemonInput(), this prevents duplicates at both the UX and
+   logic layers.
+   ================================================================ */
+
+function syncDatalist() {
+    const datalist = document.getElementById('pokemonList');
+
+    // IDs of Pokémon that are already committed in any slot.
+    const chosenIds = new Set(
+        selectedPokemon.filter(Boolean).map(p => p.id)
+    );
+
+    const fragment = document.createDocumentFragment();
+
+    allPokemon.forEach(p => {
+        // Skip Pokémon that are already selected in another slot.
+        // (A slot's own Pokémon is never in another input, so it won't
+        //  be accidentally excluded from its own field's suggestions.)
+        if (!chosenIds.has(p.id)) {
+            const opt       = document.createElement('option');
+            opt.value       = p.name;   // datalist options use name as value
+            fragment.appendChild(opt);
+        }
+    });
+
+    datalist.replaceChildren(fragment);
 }
 
 
@@ -310,322 +579,244 @@ function onPokemonSelectChange(event) {
    LOOKUP HELPERS
    ================================================================ */
 
-function findPokemonById(id) {
-    for (var i = 0; i < allPokemon.length; i++) {
-        if (allPokemon[i].id === id) {
-            return allPokemon[i];
-        }
-    }
-    return null;
-}
+// Case-insensitive name lookup — matches exactly what the user typed.
+const findPokemonByName = name =>
+    allPokemon.find(p => p.name.toLowerCase() === name.toLowerCase()) ?? null;
 
-// Returns array of currently selected (non-null) pokemon objects.
-function getActivePokemon() {
-    var active = [];
-    for (var i = 0; i < selectedPokemon.length; i++) {
-        if (selectedPokemon[i] !== null) {
-            active.push(selectedPokemon[i]);
-        }
-    }
-    return active;
-}
+// Returns only the slots that have a committed Pokémon.
+const getActivePokemon = () => selectedPokemon.filter(Boolean);
 
 
 /* ================================================================
    CALCULATION LOGIC
-   (Pure functions: take data in, return computed data, no DOM access)
+   Pure functions — zero DOM access. Category strings are already
+   lowercase by the time they reach these functions.
    ================================================================ */
 
-// Given the active pokemon list, compute a category frequency map.
-// Returns an object: { categoryName: countOfPokemonThatLikeIt }
+/**
+ * Builds a frequency map of how many active Pokémon share each category.
+ * Example: { "cute stuff": 2, "rides": 1 }
+ */
 function calculateCategoryFrequency(activePokemon) {
-    var freq = {};
-
-    for (var i = 0; i < activePokemon.length; i++) {
-        var categories = activePokemon[i].favoriteCategories;
-        for (var j = 0; j < categories.length; j++) {
-            var cat = categories[j];
-            if (freq.hasOwnProperty(cat)) {
-                freq[cat] = freq[cat] + 1;
-            } else {
-                freq[cat] = 1;
-            }
-        }
-    }
-
-    return freq;
+    return activePokemon.reduce((freq, pkmn) => {
+        pkmn.favoriteCategories.forEach(cat => {
+            freq[cat] = (freq[cat] ?? 0) + 1;
+        });
+        return freq;
+    }, {});
 }
 
-// Given the active pokemon list and a single item, calculate:
-// - matchedCategories: array of category names that intersect with item.categories
-// - satisfiedDetails: array of strings like "Pikachu (Active)" for each pokemon/category match
+/**
+ * Scores a single item against the active Pokémon selection.
+ * Returns:
+ *   matchedCategories — item categories liked by at least one active Pokémon
+ *   totalMatches      — count of matched categories
+ *   satisfiedDetails  — per-Pokémon strings, e.g. "Rolycoly (Rides, Stone Stuff)"
+ */
 function calculateItemMatch(item, activePokemon) {
-    var matchedCategories = [];
+    const matchedCategories = item.categories.filter(itemCat =>
+        activePokemon.some(pkmn => pkmn.favoriteCategories.includes(itemCat))
+    );
 
-    // For each category this item provides, check if it's matched by any active pokemon
-    for (var c = 0; c < item.categories.length; c++) {
-        var itemCategory = item.categories[c];
-        var matchedThisCategory = false;
-
-        for (var p = 0; p < activePokemon.length; p++) {
-            if (activePokemon[p].favoriteCategories.indexOf(itemCategory) !== -1) {
-                matchedThisCategory = true;
-                break;
-            }
+    const satisfiedDetails = activePokemon.reduce((acc, pkmn) => {
+        const pkmnCats = matchedCategories.filter(cat =>
+            pkmn.favoriteCategories.includes(cat)
+        );
+        if (pkmnCats.length > 0) {
+            const catDisplay = pkmnCats
+                .map(c => c.replace(/\b\w/g, ch => ch.toUpperCase()))
+                .join(', ');
+            acc.push(`${pkmn.name} (${catDisplay})`);
         }
+        return acc;
+    }, []);
 
-        if (matchedThisCategory) {
-            matchedCategories.push(itemCategory);
-        }
-    }
-
-    // Build satisfiedDetails grouped per pokemon: "Name (Cat1, Cat2, ...)"
-    var satisfiedDetails = [];
-    for (var p2 = 0; p2 < activePokemon.length; p2++) {
-        var pkmn = activePokemon[p2];
-        var pkmnMatchedCats = [];
-
-        for (var c2 = 0; c2 < matchedCategories.length; c2++) {
-            var cat = matchedCategories[c2];
-            if (pkmn.favoriteCategories.indexOf(cat) !== -1) {
-                pkmnMatchedCats.push(cat);
-            }
-        }
-
-        if (pkmnMatchedCats.length > 0) {
-            satisfiedDetails.push(pkmn.name + ' (' + pkmnMatchedCats.join(', ') + ')');
-        }
-    }
-
-    return {
-        matchedCategories: matchedCategories,
-        totalMatches: matchedCategories.length,
-        satisfiedDetails: satisfiedDetails
-    };
+    return { matchedCategories, totalMatches: matchedCategories.length, satisfiedDetails };
 }
 
-// Filter and compute match data for all items of a given type, given active pokemon.
-// Returns array of objects: { item: <item>, totalMatches, matchedCategories, satisfiedDetails }
-// Only includes items where totalMatches > 0.
-// Sorted by totalMatches descending.
+/**
+ * Filters allItems to a given type, scores each item, drops zero-match rows,
+ * and returns results sorted by totalMatches descending (best items first).
+ */
 function calculateItemsForType(itemType, activePokemon) {
-    var results = [];
-
-    for (var i = 0; i < allItems.length; i++) {
-        var item = allItems[i];
-
-        if (item.type !== itemType) {
-            continue;
-        }
-
-        var matchData = calculateItemMatch(item, activePokemon);
-
-        if (matchData.totalMatches > 0) {
-            results.push({
-                item: item,
-                totalMatches: matchData.totalMatches,
-                matchedCategories: matchData.matchedCategories,
-                satisfiedDetails: matchData.satisfiedDetails
-            });
-        }
-    }
-
-    // Sort descending by totalMatches
-    results.sort(function(a, b) {
-        return b.totalMatches - a.totalMatches;
-    });
-
-    return results;
+    return allItems
+        .filter(item => item.type === itemType)
+        .map(item    => ({ item, ...calculateItemMatch(item, activePokemon) }))
+        .filter(row  => row.totalMatches > 0)
+        .sort((a, b) => b.totalMatches - a.totalMatches);
 }
 
 
 /* ================================================================
    RENDERING LOGIC
-   (DOM manipulation only: takes pre-calculated data and draws it)
+   All node construction happens inside DocumentFragments; a single
+   replaceChildren() per container is the only live DOM write,
+   minimising layout recalculations.
    ================================================================ */
 
-// Master render function: re-renders sprites, synergy badges, and all 3 tables.
+// Master render — called after any state change.
 function renderAll() {
     renderSelectedSprites();
 
-    var activePokemon = getActivePokemon();
-    var categoryFreq = calculateCategoryFrequency(activePokemon);
+    const activePokemon = getActivePokemon();
+    const categoryFreq  = calculateCategoryFrequency(activePokemon);
 
     renderSynergyBadges(categoryFreq);
-
-    renderItemTable('toyTableContainer', 'Toy', activePokemon);
+    renderItemTable('toyTableContainer',        'Toy',        activePokemon);
     renderItemTable('relaxationTableContainer', 'Relaxation', activePokemon);
     renderItemTable('decorationTableContainer', 'Decoration', activePokemon);
-    renderItemTable('noneTableContainer', 'None', activePokemon);
+    renderItemTable('noneTableContainer',       'None',       activePokemon);
 }
 
-// Update the sprite/name display under each dropdown.
+// Refreshes the sprite image and name label beneath each input.
 function renderSelectedSprites() {
-    for (var slot = 0; slot < 4; slot++) {
-        var imgEl = document.getElementById('pkmnSprite' + slot);
-        var nameEl = document.getElementById('pkmnName' + slot);
-        var pkmn = selectedPokemon[slot];
+    for (let slot = 0; slot < 4; slot++) {
+        const imgEl  = document.getElementById(`pkmnSprite${slot}`);
+        const nameEl = document.getElementById(`pkmnName${slot}`);
+        const pkmn   = selectedPokemon[slot];
 
-        if (pkmn !== null) {
-            imgEl.src = pkmn.spriteUrl;
-            imgEl.alt = pkmn.name;
+        if (pkmn) {
+            imgEl.src           = pkmn.spriteUrl;
+            imgEl.alt           = pkmn.name;
             imgEl.style.display = 'block';
-            nameEl.textContent = pkmn.name;
+            nameEl.textContent  = pkmn.name;
         } else {
-            imgEl.src = '';
+            imgEl.src           = '';
             imgEl.style.display = 'none';
-            nameEl.textContent = '';
+            nameEl.textContent  = '';
         }
     }
 }
 
-// Render the pooled category badges. Categories liked by 2+ selected pokemon get
-// the bright green "overlap" highlight.
+/**
+ * Renders category badges into #synergyArea.
+ * Categories shared by 2+ Pokémon receive the green "overlap" highlight.
+ */
 function renderSynergyBadges(categoryFreq) {
-    var container = document.getElementById('synergyArea');
-    container.innerHTML = '';
+    const container = document.getElementById('synergyArea');
+    const fragment  = document.createDocumentFragment();
+    const names     = Object.keys(categoryFreq).sort();
 
-    var categoryNames = Object.keys(categoryFreq);
-
-    if (categoryNames.length === 0) {
-        var msg = document.createElement('span');
-        msg.className = 'no-items-msg';
-        msg.textContent = 'Select at least one Pokemon to see category synergy.';
-        container.appendChild(msg);
-        return;
+    if (names.length === 0) {
+        const msg       = document.createElement('span');
+        msg.className   = 'no-items-msg';
+        msg.textContent = 'Select at least one Pokémon to see category synergy.';
+        fragment.appendChild(msg);
+    } else {
+        names.forEach(catName => {
+            const count       = categoryFreq[catName];
+            const displayName = catName.replace(/\b\w/g, ch => ch.toUpperCase());
+            const badge       = document.createElement('span');
+            badge.className   = `badge${count >= 2 ? ' overlap' : ''}`;
+            badge.textContent = `${displayName} (${count})`;
+            fragment.appendChild(badge);
+        });
     }
 
-    // Sort alphabetically for consistent display
-    categoryNames.sort();
-
-    for (var i = 0; i < categoryNames.length; i++) {
-        var catName = categoryNames[i];
-        var count = categoryFreq[catName];
-
-        var badge = document.createElement('span');
-        badge.className = 'badge';
-        if (count >= 2) {
-            badge.className += ' overlap';
-        }
-
-        badge.textContent = catName + ' (' + count + ')';
-        container.appendChild(badge);
-    }
+    container.replaceChildren(fragment);
 }
 
-// Render a single optimization table (Toy / Relaxation / Decoration) into the given container.
+/**
+ * Builds and injects a complete optimisation table for one item type.
+ * Everything is assembled in a DocumentFragment; one replaceChildren()
+ * call writes the result to the live DOM.
+ */
 function renderItemTable(containerId, itemType, activePokemon) {
-    var container = document.getElementById(containerId);
-    container.innerHTML = '';
+    const container    = document.getElementById(containerId);
+    const fragment     = document.createDocumentFragment();
+    const sectionLabel = SECTION_LABELS[itemType] ?? itemType.toLowerCase();
 
     if (activePokemon.length === 0) {
-        var msg = document.createElement('div');
-        msg.className = 'no-items-msg';
-        msg.textContent = 'Select at least one Pokemon to see ' + itemType.toLowerCase() + ' recommendations.';
-        container.appendChild(msg);
+        const msg       = document.createElement('div');
+        msg.className   = 'no-items-msg';
+        msg.textContent = `Select at least one Pokémon to see ${sectionLabel} recommendations.`;
+        fragment.appendChild(msg);
+        container.replaceChildren(fragment);
         return;
     }
 
-    var matchedItems = calculateItemsForType(itemType, activePokemon);
+    const matchedItems = calculateItemsForType(itemType, activePokemon);
 
     if (matchedItems.length === 0) {
-        var noMatchMsg = document.createElement('div');
-        noMatchMsg.className = 'no-items-msg';
-        noMatchMsg.textContent = 'No matching ' + itemType.toLowerCase() + ' items found for the current selection.';
-        container.appendChild(noMatchMsg);
+        const msg       = document.createElement('div');
+        msg.className   = 'no-items-msg';
+        msg.textContent = `No matching ${sectionLabel} items found for the current selection.`;
+        fragment.appendChild(msg);
+        container.replaceChildren(fragment);
         return;
     }
 
-    // Build table
-    var table = document.createElement('table');
+    /* ---- Table header ---- */
+    const table     = document.createElement('table');
     table.className = 'serebii-table';
 
-    // Header row
-    var thead = document.createElement('thead');
-    var headerRow = document.createElement('tr');
+    const thead     = document.createElement('thead');
+    const headerRow = document.createElement('tr');
 
-    var headers = ['Image', 'Item Name', 'Total Matches', 'Categories Met', 'Pokemon Satisfied'];
-    for (var h = 0; h < headers.length; h++) {
-        var th = document.createElement('th');
-        th.className = 'header';
-        th.textContent = headers[h];
-        headerRow.appendChild(th);
-    }
+    ['Image', 'Item Name', 'Total Matches', 'Categories Met', 'Pokémon Satisfied']
+        .forEach(colLabel => {
+            const th       = document.createElement('th');
+            th.className   = 'header';
+            th.textContent = colLabel;
+            headerRow.appendChild(th);
+        });
+
     thead.appendChild(headerRow);
     table.appendChild(thead);
 
-    // Body rows
-    var tbody = document.createElement('tbody');
+    /* ---- Table body ---- */
+    const tbody = document.createElement('tbody');
 
-    for (var r = 0; r < matchedItems.length; r++) {
-        var rowData = matchedItems[r];
-        var tr = document.createElement('tr');
-        tr.className = (r % 2 === 0) ? 'norm-row' : 'alt-row';
+    matchedItems.forEach((rowData, idx) => {
+        const tr     = document.createElement('tr');
+        tr.className = idx % 2 === 0 ? 'norm-row' : 'alt-row';
 
-        // Image cell
-        var tdImg = document.createElement('td');
-        var img = document.createElement('img');
-        img.src = rowData.item.imageUrl;
-        img.alt = rowData.item.name;
+        // Col 1 — Item image
+        const tdImg = document.createElement('td');
+        const img   = document.createElement('img');
+        img.src     = rowData.item.imageUrl;
+        img.alt     = rowData.item.name;
         tdImg.appendChild(img);
         tr.appendChild(tdImg);
 
-        // Item Name cell
-        var tdName = document.createElement('td');
+        // Col 2 — Item name
+        const tdName       = document.createElement('td');
         tdName.textContent = rowData.item.name;
         tr.appendChild(tdName);
 
-        // Total Matches cell
-        var tdMatches = document.createElement('td');
+        // Col 3 — Total matches (green highlight at HIGH_MATCH_THRESHOLD)
+        const tdMatches       = document.createElement('td');
+        tdMatches.className   = rowData.totalMatches >= HIGH_MATCH_THRESHOLD
+            ? 'high-match'
+            : 'low-match';
         tdMatches.textContent = rowData.totalMatches;
-        tdMatches.style.textAlign = 'center';
         tr.appendChild(tdMatches);
 
-        // Categories Met cell
-        var tdCategories = document.createElement('td');
-        tdCategories.textContent = rowData.matchedCategories.join(', ');
+        // Col 4 — Category names (title-cased for display)
+        const tdCategories       = document.createElement('td');
+        tdCategories.textContent = rowData.matchedCategories
+            .map(c => c.replace(/\b\w/g, ch => ch.toUpperCase()))
+            .join(', ');
         tr.appendChild(tdCategories);
 
-        // Pokemon Satisfied cell
-        var tdSatisfied = document.createElement('td');
+        // Col 5 — Per-Pokémon satisfaction summary
+        const tdSatisfied       = document.createElement('td');
         tdSatisfied.textContent = rowData.satisfiedDetails.join(', ');
         tr.appendChild(tdSatisfied);
 
         tbody.appendChild(tr);
-    }
+    });
 
     table.appendChild(tbody);
-    container.appendChild(table);
-}
-
-
-/* ================================================================
-   ACCORDION LOGIC
-   ================================================================ */
-
-// Attach click handlers to all accordion headers to toggle their content visibility.
-function initAccordions() {
-    var headers = document.querySelectorAll('.accordion-header');
-
-    for (var i = 0; i < headers.length; i++) {
-        headers[i].addEventListener('click', function() {
-            var targetId = this.getAttribute('data-target');
-            var content = document.getElementById(targetId);
-
-            this.classList.toggle('collapsed');
-            content.classList.toggle('collapsed');
-        });
-    }
+    fragment.appendChild(table);
+    container.replaceChildren(fragment);
 }
 
 
 /* ================================================================
    ENTRY POINT
    ================================================================ */
-document.addEventListener('DOMContentLoaded', function() {
-    initAccordions();
-    loadData();
-});
+document.addEventListener('DOMContentLoaded', loadData);
 </script>
 
 </body>
